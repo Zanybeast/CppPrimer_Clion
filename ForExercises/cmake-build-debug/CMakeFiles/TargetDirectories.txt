@@ -1,0 +1,3 @@
+/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir

@@ -3,24 +3,64 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 int main()
 {
-    const string hexdigits = "0123456789ABCDEF";
-    cout << "Enter a series of numbers between 0 and 15 seperated by spaces. Hit enter when finished: " << endl;
-    string result;
-    string::size_type n;
-    while (cin >> n)
-    {
-        if (n < hexdigits.size())
-        {
-            result += hexdigits[n];
-        }
-    }
+    int i = 4294967297;
+    unsigned ui = i;
+    cout << ui << endl;
 
-    cout << "Your hex number is: " << result << endl;
+
+//    int i = 0;
+//    int *p = &i;
+//    double d = 0.0;
+//    double *pd = &d;
+//    cout << "size of *p = " << sizeof(p) << endl;
+//    cout << "size of i = " << sizeof(i) << endl;
+//    cout << "size of double *p = " << sizeof(pd) << endl;
+//    char *c;
+//    cout << "size of char * = " << sizeof(c) << endl;
+//    vector<int> vi = {2, 3, 4, 5, 10, 44, 123};
+//    cout << "size of vector = " << sizeof(vi) << endl;
+
+
+//    cout << 21 % 8 << endl;
+//    cout << -21 % 8 << endl;
+//    cout << 21 % -8 << endl;
+//    cout << -21 % -8 << endl;
+
+//    short v = 32767;
+//    v += 1;
+//    cout << v << endl;
+
+//    int array[] = {1, 2, 3, 4, 5};
+//    int (*Parray)[5] = &array;
+//    int (&Refarray)[5] = array;
+//    cout << *Parray[0] << endl;
+//    cout << Refarray[1] << endl;
+//    int a = 10;
+//    int b = 20;
+//    int *pa = &a, *pb = &b;
+//    int *pArr[] = {pa, pb};
+//    int *(*Pparray)[2] = &pArr;
+//    cout << *((*Pparray)[1]) << endl;
+
+//    const string hexdigits = "0123456789ABCDEF";
+//    cout << "Enter a series of numbers between 0 and 15 seperated by spaces. Hit enter when finished: " << endl;
+//    string result;
+//    string::size_type n;
+//    while (cin >> n)
+//    {
+//        if (n < hexdigits.size())
+//        {
+//            result += hexdigits[n];
+//        }
+//    }
+//
+//    cout << "Your hex number is: " << result << endl;
 
 
 

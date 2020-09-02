@@ -19,6 +19,8 @@ fstream
 -
 string
 -
+vector
+-
 Sales_data.h
 /Users/carl/Desktop/01Project/Cpp/Basic/Sales_data.h
 

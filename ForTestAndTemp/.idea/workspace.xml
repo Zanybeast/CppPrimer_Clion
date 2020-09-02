@@ -30,66 +30,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6005e7f5-28e7-469e-abca-10906c789ed8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/Cpp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Basic/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Basic/Sales_data.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ForExercises/.idea/ForExercises.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/CXX.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/main.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/ForExercises" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ForTestAndTemp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ForTestAndTemp.dir/CXX.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ForTestAndTemp.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ForTestAndTemp.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ForTestAndTemp.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ForTestAndTemp.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ForTestAndTemp.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ForTestAndTemp.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ForTestAndTemp.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ForTestAndTemp.dir/main.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ForTestAndTemp.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/ForTestAndTemp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/ForTestAndTemp.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Basic/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Basic/cmake-build-debug/Basic.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/cmake-build-debug/Basic.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Basic/cmake-build-debug/CMakeFiles/Basic.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/cmake-build-debug/CMakeFiles/Basic.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Basic/cmake-build-debug/Basic" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/cmake-build-debug/Basic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Basic/cmake-build-debug/CMakeFiles/Basic.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/cmake-build-debug/CMakeFiles/Basic.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Basic/cmake-build-debug/CMakeFiles/Basic.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/cmake-build-debug/CMakeFiles/Basic.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Basic/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Basic/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Basic/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Basic/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/ForExercises" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/ForExercises" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ForTestAndTemp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ForTestAndTemp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +78,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration name="ForTestAndTemp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ForTestAndTemp" TARGET_NAME="ForTestAndTemp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ForTestAndTemp" RUN_TARGET_NAME="ForTestAndTemp">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="ForTestAndTemp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ForTestAndTemp" TARGET_NAME="ForTestAndTemp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ForTestAndTemp" RUN_TARGET_NAME="ForTestAndTemp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -144,7 +110,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598895708024</updated>
-      <workItem from="1598895709358" duration="654000" />
+      <workItem from="1598895709358" duration="2607000" />
+      <workItem from="1599010438015" duration="6497000" />
     </task>
     <servers />
   </component>
@@ -161,23 +128,61 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="272" key="GridCell.Tab.0.bottom" timestamp="1598895928173">
+    <state x="318" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599015303711">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="318" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.823@0.23.1440.823" timestamp="1599015303711" />
+    <state x="424" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1599010778404" />
+    <state width="1878" height="176" key="GridCell.Tab.0.bottom" timestamp="1599058864802">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
-    <state width="1878" height="272" key="GridCell.Tab.0.bottom/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1598895928173" />
-    <state width="1878" height="272" key="GridCell.Tab.0.center" timestamp="1598895928172">
+    <state width="1398" height="264" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1599014934396" />
+    <state width="1878" height="251" key="GridCell.Tab.0.bottom/314.1103.1440.823/0.23.1920.1057@0.23.1920.1057" timestamp="1599042364312" />
+    <state width="1878" height="176" key="GridCell.Tab.0.bottom/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1599058864802" />
+    <state width="1878" height="176" key="GridCell.Tab.0.center" timestamp="1599058864802">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
-    <state width="1878" height="272" key="GridCell.Tab.0.center/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1598895928172" />
-    <state width="1878" height="272" key="GridCell.Tab.0.left" timestamp="1598895928172">
+    <state width="1398" height="264" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1599014934395" />
+    <state width="1878" height="251" key="GridCell.Tab.0.center/314.1103.1440.823/0.23.1920.1057@0.23.1920.1057" timestamp="1599042364311" />
+    <state width="1878" height="176" key="GridCell.Tab.0.center/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1599058864802" />
+    <state width="1878" height="176" key="GridCell.Tab.0.left" timestamp="1599058864801">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
-    <state width="1878" height="272" key="GridCell.Tab.0.left/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1598895928172" />
-    <state width="1878" height="272" key="GridCell.Tab.0.right" timestamp="1598895928173">
+    <state width="1398" height="264" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1599014934395" />
+    <state width="1878" height="251" key="GridCell.Tab.0.left/314.1103.1440.823/0.23.1920.1057@0.23.1920.1057" timestamp="1599042364310" />
+    <state width="1878" height="176" key="GridCell.Tab.0.left/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1599058864801" />
+    <state width="1878" height="176" key="GridCell.Tab.0.right" timestamp="1599058864802">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
-    <state width="1878" height="272" key="GridCell.Tab.0.right/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1598895928173" />
+    <state width="1398" height="264" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1599014934396" />
+    <state width="1878" height="251" key="GridCell.Tab.0.right/314.1103.1440.823/0.23.1920.1057@0.23.1920.1057" timestamp="1599042364311" />
+    <state width="1878" height="176" key="GridCell.Tab.0.right/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1599058864802" />
+    <state width="1878" height="176" key="GridCell.Tab.1.bottom" timestamp="1599058864727">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1599014934336" />
+    <state width="1878" height="251" key="GridCell.Tab.1.bottom/314.1103.1440.823/0.23.1920.1057@0.23.1920.1057" timestamp="1599042364244" />
+    <state width="1878" height="176" key="GridCell.Tab.1.bottom/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1599058864727" />
+    <state width="1878" height="176" key="GridCell.Tab.1.center" timestamp="1599058864726">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1599014934336" />
+    <state width="1878" height="251" key="GridCell.Tab.1.center/314.1103.1440.823/0.23.1920.1057@0.23.1920.1057" timestamp="1599042364243" />
+    <state width="1878" height="176" key="GridCell.Tab.1.center/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1599058864726" />
+    <state width="1878" height="176" key="GridCell.Tab.1.left" timestamp="1599058864726">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1599014934336" />
+    <state width="1878" height="251" key="GridCell.Tab.1.left/314.1103.1440.823/0.23.1920.1057@0.23.1920.1057" timestamp="1599042364243" />
+    <state width="1878" height="176" key="GridCell.Tab.1.left/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1599058864726" />
+    <state width="1878" height="176" key="GridCell.Tab.1.right" timestamp="1599058864726">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1599014934336" />
+    <state width="1878" height="251" key="GridCell.Tab.1.right/314.1103.1440.823/0.23.1920.1057@0.23.1920.1057" timestamp="1599042364244" />
+    <state width="1878" height="176" key="GridCell.Tab.1.right/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1599058864726" />
   </component>
 </project>

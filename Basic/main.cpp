@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <fstream>
 #include <string>
+#include <vector>
 
 #include "Sales_data.h"
 
@@ -13,7 +14,7 @@ using namespace std;
 
 int main()
 {
-    std::cout << "Main Project--\n";
+    cout << "Main Project--\n";
 
     ifstream input;
     input.open("/Users/carl/Desktop/Temp/ForCpp/SalesRecord.txt");

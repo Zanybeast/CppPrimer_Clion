@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 /Users/carl/Desktop/01Project/Cpp/Basic/Sales_data.h
+iostream
+-
+fstream
+-
 string
 -
 

@@ -1,9 +1,9 @@
 //
-// Created by carl on 2020/9/1.
+// Created by carl on 2020/9/4.
 //
 
-#ifndef BASIC_SALES_DATA_H
-#define BASIC_SALES_DATA_H
+#ifndef FOREXERCISES_SALES_DATA_H
+#define FOREXERCISES_SALES_DATA_H
 
 #include <iostream>
 #include <fstream>
@@ -11,31 +11,33 @@
 
 using namespace std;
 
-struct Sales_data;
+class Sales_data;
 //与类有关的函数接口的声明，尚未实现
 Sales_data add (const Sales_data& lhs, const Sales_data& rhs);
 ifstream &read(ifstream &is, Sales_data& item);
 ostream &print(ostream &os, const Sales_data& item);
 
 
-struct Sales_data
+class Sales_data
 {
+    //友元函数
+    friend Sales_data add (const Sales_data& lhs, const Sales_data& rhs);
+    friend ifstream &read(ifstream &is, Sales_data& item);
+    friend ostream &print(ostream &os, const Sales_data& item);
+    //公有成员
+public:
     //构造函数
     Sales_data() = default;
-    Sales_data(const string &s):bookNo(s) { cout << "Using Sales_data(const string &s):bookNo(s)" << endl;}
+    Sales_data(const string &s):bookNo(s) { }
     Sales_data(const string &s, unsigned n, double p):
-        bookNo(s), units_sold(n), revenue(p * n) {
-        cout << "using Sales_data(const string &s, unsigned n, double p):\n"
-                "        bookNo(s), units_sold(n), revenue(p * n)"
-                << endl;
-    }
-    Sales_data(ifstream &is) {
-        cout << "using Sales_data(ifstream &is)" << endl;
-        read(is, *this);
-    }
+            bookNo(s), units_sold(n), revenue(p * n) { }
+    Sales_data(ifstream &is) { read(is, *this); }
+//    Sales_data() : units_sold(0), revenue(0.0) { }    //某道练习题
     //成员函数
     string isbn() const {return bookNo;}
     Sales_data &combine(const Sales_data&);
+    //私有成员
+private:
     double avg_price() const;
     //数据成员
     string bookNo;
@@ -45,6 +47,7 @@ struct Sales_data
 };
 
 //外部定义成员函数
+inline
 double Sales_data::avg_price() const {
     if (units_sold) {
         return revenue / units_sold;
@@ -66,7 +69,7 @@ Sales_data add (const Sales_data& lhs, const Sales_data& rhs) {
     return sum;
 };
 ostream &print(ostream &os, const Sales_data& item) {
-    os << item.isbn() << " " << item.units_sold << " " << item.revenue << " " << item.avg_price();
+    os << item.bookNo << " " << item.units_sold << " " << item.revenue << " " << item.avg_price();
     return os;
 };
 ifstream &read(ifstream &is, Sales_data& item) {
@@ -76,4 +79,4 @@ ifstream &read(ifstream &is, Sales_data& item) {
     return is;
 };
 
-#endif //BASIC_SALES_DATA_H
+#endif //FOREXERCISES_SALES_DATA_H

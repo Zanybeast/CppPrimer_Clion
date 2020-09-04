@@ -3,4 +3,4 @@ project(Basic)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Basic main.cpp Sales_data.h)
+add_executable(Basic main.cpp Sales_data.h Person.h)

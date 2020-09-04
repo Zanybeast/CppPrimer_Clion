@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/Basic/Person.h">
+			<Option target="Basic"/>
+		</Unit>
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/Basic/Sales_data.h">
 			<Option target="Basic"/>
 		</Unit>

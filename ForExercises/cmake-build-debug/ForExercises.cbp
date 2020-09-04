@@ -80,6 +80,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Person.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Sales_data.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Screen.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Window_mgr.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/X.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Y.h">
+			<Option target="ForExercises"/>
+		</Unit>
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/main.cpp">
 			<Option target="ForExercises"/>
 		</Unit>

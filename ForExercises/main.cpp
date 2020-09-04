@@ -4,18 +4,170 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "Sales_data.h"
+#include "Person.h"
+#include "Screen.h"
+#include "Window_mgr.h"
+
+#define NDEBUG
 
 using namespace std;
+
+int fact(int n) {
+    int res = 1;
+    while (n > 1) {
+        res *= n;
+        n--;
+    }
+    return res;
+}
+void E6_04() {
+    int i = 0;
+    cout << "Please enter a number: " << endl;
+    cin >> i;
+    cout << "The factorial of the number is " << fact(i) << endl;
+}
+int absValue(int i) {
+    return (i >= 0) ? i : -i;
+}
+bool isPrefixVector(vector<int>, vector<int>);
+void swap(int *a, int *b) {
+    int temp = 0;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+void swapUsingRef(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+bool hasCapital(const string &s) {
+    for (auto &c: s) {
+        if (isupper(c))
+            return true;
+    }
+    return false;
+}
+void stringToLowercase(string &s) {
+    if (!s.empty()) {
+        for (auto &c: s) {
+            c = tolower(c);
+        }
+    }
+}
+int biggerInteger(int a, const int *p) {
+    return a >= *p ? a : *p;
+}
+void swapPointer(int *&a, int *&b) {
+    auto temp = a;
+    a = b;
+    b = temp;
+}
+void printf(const int &i) {
+    cout << i << endl;
+}
+void printf(const int* beg, const int* end) {
+    while (beg != end) {
+        cout << *beg++ << " ";
+    }
+}
+void print6_24(const int ia[10]) {
+
+    for (size_t i = 0; i != 10; ++i) {
+        cout << *ia++ << " ";
+    }
+
+}
+int sum(initializer_list<int> il) {
+    int sum = 0;
+    for (auto begin = il.begin(); begin != il.end(); ++begin) {
+        sum += *begin;
+    }
+
+    return sum;
+}
+int &get(int *array, int index) {
+    return array[index];
+}
+void vectorOutput(vector<int> &vi, vector<int>::iterator it) {
+    if (it == vi.end()) {
+        return;
+    } else {
+        cout << *it << " ";
+        vectorOutput(vi, it + 1);
+    }
+}
+string make_plural(size_t ctr, const string &word, const string &ending = "s") {
+    return (ctr > 1) ? word + ending : word;
+}
+constexpr bool isShorter(const string &s1, const string &s2) {
+    return s1.size() < s2.size();
+}
+void printVector(vector<int> &vi) {
+#ifdef NDEBUG
+    cout << "Vector size: " << vi.size() << endl;
+#endif
+    if (!vi.empty()) {
+        auto tmp = vi.back();
+        vi.pop_back();
+        printVector(vi);
+        cout << tmp << " " ;
+    }
+}
+void f() {
+    cout << "f()" << endl;
+}
+void f(int, int) {
+    cout << "f(int, int)" << endl;
+}
+void f(int) {
+    cout << "f(int)" << endl;
+}
+void f(double, double d = 3.55) {
+    cout << "f(double, double d = 3.55)" << endl;
+}
+
+int sum(int a, int b) {
+    return a + b;
+}
+int subtract(int a, int b) {
+    return a - b;
+}
+int multiple(int a, int b) {
+    return a * b;
+}
+int divide(int a, int b) {
+    return a / b;
+}
 
 int chapter02();
 int chapter03();
 int chapter04();
 int chapter05();
+int chapter06();
+int chapter07() {
+    //E7.27
+    Screen myScreen(5, 5, 'X');
+    myScreen.move(4, 0).set('#').display(cout);
+    cout << "\n";
+    myScreen.display(cout);
+    cout << "\n";
+
+
+    //E7.11
+//    Sales_data s1("haha");
+//    Sales_data s2("good", 12, 2.5);
+};
 
 int main()
 {
     cout << "ForExercises--\n";
-    chapter05();
+    chapter07();
+
+//    chapter06();
+
+//    chapter05();
 
 //    chapter04();
 
@@ -25,7 +177,240 @@ int main()
     return 0;
 }
 
+
+
+int chapter06() {
+    //E6.54
+    int f1(int, int);
+    typedef int(*fp1)(int, int);
+    using fp2 = int (*) (int, int);
+    typedef decltype(f1) *fp3;
+    using fp4 = decltype(f1) *;
+
+    vector<decltype(f1) *> vfp = {sum, subtract, multiple, divide};
+    int a = 120, b = 6;
+    for (auto f : vfp) {
+        cout << f(a, b) << endl;
+    }
+
+
+
+    //E6.51
+//    f(42);
+//    f(42, 0);
+//    f(2.56, 4.11);
+
+
+    //E6.47
+//    vector<int> vi = {2, 4, 5, 10, 11, 23, 88};
+//    printVector(vi);
+
+
+    //E6.46
+//    cout << isShorter("fsdhfsauuuuuuuuuuuuuqqqqqa", "fsjaohfwuf") << endl;
+
+
+    //E6.41
+//    cout << make_plural(2, "success", "es") << endl;
+//    cout << make_plural(5, "failure") << endl;
+
+
+    //E6.36
+//    string (&func(string (&array)[10]))[10];
+//    using sA = string[10];
+//    sA &func(sA (&sa));
+//
+//    auto func(sA &sa) -> string (&) [10];
+//    string as[10];
+//    decltype(as) &func3(sA &sa);
+
+    //E6.33
+//    vector<int> vi = {2, 4, 5, 10, 11, 23, 88};
+//    vectorOutput(vi, vi.begin());
+
+
+    //E6.32
+//    int ia[10];
+//    for (int i = 0; i < 10; ++i) {
+//        get(ia, i) = i;
+//    }
+//    for (const auto i: ia) {
+//        cout << i << " " ;
+//    }
+
+
+    //E6.27
+//    cout << "sum of some integers is " << sum({12, 3, 5, 8, 18}) << endl;
+
+
+    //E6.24
+//    int i[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//    print6_24(i);
+
+
+    //E6.23
+//    int i = 1001, j[5] = {0, 1, 3, 5, 8};
+//    printf(i);
+//    printf(begin(j), end(j));
+
+
+    //E6.22
+//    int a = 20, b = 30;
+//    int *pa = &a, *pb = &b;
+//    cout << "*pa = " << *pa << ", *pb = " << *pb << endl;
+//    swapPointer(pa, pb);
+//    cout << "*pa = " << *pa << ", *pb = " << *pb << endl;
+
+
+    //E6.21
+//    int a = 1200, b = 2000;
+//    cout << biggerInteger(a, &b) << endl;
+
+
+    //E6.18
+//    bool compare(matrix &, matrix &);
+//    vector<int>::iterator change_val(int, vector<int>::iterator);
+
+
+
+    //E6.17
+//    string s1 = "Hello everyone.";
+//    string s2 = "no capital here";
+//    if (hasCapital(s2)) {
+//        cout << "String has capital." << endl;
+//    } else {
+//        cout << "No capital" << endl;
+//    }
+//    string s3 = "ALL LETTERS ARE CAPITAL. HAHA!";
+//    stringToLowercase(s3);
+//    cout << s3 << endl;
+
+
+    //E6.12
+//    int a = 10, b = 20;
+//    cout << "a = " << a << ", b = " << b << endl;
+//    swapUsingRef(a, b);
+//    cout << "a = " << a << ", b = " << b << endl;
+
+    //E6.10
+//    int a = 10, b = 20;
+//    cout << "a = " << a << ", b = " << b << endl;
+//    swap(&a, &b);
+//    cout << "a = " << a << ", b = " << b << endl;
+
+    //E6.5
+//    cout << "Absolute value: " << absValue(-55) << endl;
+
+//    E6_04();
+
+    return 0;
+}
+
+bool isPrefixVector(vector<int> vi1, vector<int> vi2) {
+    vector<int>::size_type sz = vi1.size() > vi2.size() ? vi2.size() : vi1.size();
+
+    if (sz == 0) {
+        return true;
+    }
+    for (int i = 0; i < sz; ++i) {
+        if (vi1[i] != vi2[i])
+            return false;
+    }
+
+    return true;
+}
+
 int chapter05() {
+    //E5.21
+    string word, preword;
+    while (cin >> word) {
+        if (!isupper(word[0])) {
+            preword = "";
+            continue;
+        }
+
+        if (preword == word) {
+            cout << "Repeated word occurs: " << word << endl;
+            break;
+        }
+    }
+
+    if (cin.eof())
+        cout << "No words repeat." << endl;
+
+
+    //E5.20
+//    string word, preword;
+//    while (cin >> word) {
+//        if (preword == word) {
+//            cout << "Repeated word occurs: " << word << endl;
+//            break;
+//        }
+//        preword = word;
+//    }
+//    if (cin.eof())
+//        cout << "No words repeat." << endl;
+
+
+
+    //E5.19
+//    string s1, s2;
+//    string instruction;
+//    do {
+//        cout << "Please enter two string: " << endl;
+//        cin >> s1 >> s2;
+//        if (s1.size() == s2.size()) {
+//            cout << "The same length of two string." << endl;
+//        } else if (s1.size() > s2.size()) {
+//            cout << "The shorter one is " << s2 << endl;
+//        } else {
+//            cout << "The shorter one is " << s1 << endl;
+//        }
+//
+//        cout << "Continue? Enter y/Y or n/N: " << endl;
+//        cin >> instruction;
+//    } while (!instruction.empty() && (instruction[0] != 'n' && instruction[0] != 'N'));
+
+
+    //E5.17
+//    vector<int> vi1 = {0, 1, 1, 3};
+//    vector<int> vi2 = {0, 1, 1, 3, 5, 9, 10};
+//
+//    if (isPrefixVector(vi1, vi2)) {
+//        cout << "vi1 is prefix of vi2" << endl;
+//    } else {
+//        cout << "Not prfix!!!!!" << endl;
+//    }
+
+
+
+    //E5.14
+//    string word;
+//    int count = 1, maxCnt = 1;
+//    string lastStr = "";
+//    string maxStr = "";
+//    while (cin >> word) {
+//        if (lastStr == word) {
+//            ++count;
+//        } else {
+//            if (count > 1 && count > maxCnt) {
+//                maxCnt = count;
+//                maxStr = lastStr;
+//                count = 1;
+//            } else {
+//                count = 1;
+//            }
+//        }
+//        lastStr = word;
+//    }
+//    if (maxCnt <= 1) {
+//        cout << "No word repeats." << endl;
+//    } else {
+//        cout << "Max string is " << maxStr << " and appears " << maxCnt << " times." << endl;
+//    }
+
+
+
     //E5.5
 //    const vector<string> vc = {"F", "D", "C", "B", "A", "A++"};
 //

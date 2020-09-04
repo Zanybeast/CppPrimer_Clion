@@ -2,16 +2,76 @@
 //
 
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <vector>
 
 using namespace std;
 
+size_t count_calls() {
+    static size_t ctr = 0;
+    ctr += 1;
+    return ++ctr;
+}
+
 int main()
 {
-    int i = 4294967297;
-    unsigned ui = i;
-    cout << ui << endl;
+
+
+//    for (size_t i = 0; i != 10; ++i) {
+//        cout << count_calls() << endl;
+//    }
+
+
+//    int i = 10, j = 101;
+//    try {
+//        if (i != j) {
+//            throw runtime_error("Two numbers must be equal.");
+//        } else {
+//            cout << i * j << endl;
+//        }
+//    } catch (runtime_error error) {
+//        cout << error.what() << endl;
+//    }
+
+
+
+
+//    ifstream input;
+//    input.open("/Users/carl/Desktop/Temp/ForCpp/aTextForCpp.txt");
+//
+//    unsigned aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0;
+//    char ch;
+//    while (input >> ch) {
+//        switch (ch) {
+//            case 'a':
+//                ++aCnt;
+//                break;
+//            case 'e':
+//                ++eCnt;
+//                break;
+//            case 'i':
+//                ++iCnt;
+//                break;
+//            case 'o':
+//                ++oCnt;
+//                break;
+//            case 'u':
+//                ++uCnt;
+//                break;
+//
+//        }
+//    }
+//    cout << "aCount = " << aCnt
+//    << ", eCount = " << eCnt
+//    << ", iCount = " << iCnt
+//    << ", oCount = " << oCnt
+//    << ", uCount = " << uCnt << endl;
+
+
+//    int i = 4294967297;
+//    unsigned ui = i;
+//    cout << ui << endl;
 
 
 //    int i = 0;

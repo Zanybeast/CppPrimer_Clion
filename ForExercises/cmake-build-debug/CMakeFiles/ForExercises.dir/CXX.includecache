@@ -6,6 +6,38 @@
 
 #IncludeRegexTransform: 
 
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Person.h
+iostream
+-
+fstream
+-
+string
+-
+
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Sales_data.h
+iostream
+-
+fstream
+-
+string
+-
+
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Screen.h
+string
+-
+iostream
+-
+
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Window_mgr.h
+string
+-
+iostream
+-
+vector
+-
+Screen.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Screen.h
+
 /Users/carl/Desktop/01Project/Cpp/ForExercises/main.cpp
 iostream
 -
@@ -13,4 +45,12 @@ string
 -
 vector
 -
+Sales_data.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Sales_data.h
+Person.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Person.h
+Screen.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Screen.h
+Window_mgr.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Window_mgr.h
 

@@ -83,6 +83,9 @@
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/DEBUG.h">
 			<Option target="ForExercises"/>
 		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/MyDate.h">
+			<Option target="ForExercises"/>
+		</Unit>
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Person.h">
 			<Option target="ForExercises"/>
 		</Unit>

@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/Users/carl/Desktop/01Project/Cpp/ForExercises/MyDate.h
+string
+-
+array
+-
+iostream
+-
+
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Person.h
 iostream
 -
@@ -55,6 +63,8 @@ deque
 -
 forward_list
 -
+stack
+-
 Sales_data.h
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Sales_data.h
 Person.h
@@ -63,4 +73,6 @@ Screen.h
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Screen.h
 Window_mgr.h
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Window_mgr.h
+MyDate.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/MyDate.h
 

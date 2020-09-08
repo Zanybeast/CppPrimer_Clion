@@ -21,28 +21,42 @@ struct PersonInfo {
 
 int main()
 {
+    //P328
+//    int i = 42;
+//    string s = to_string(i);
+//    cout << s << endl;
+//    double d = stod(s);
+//    double d1 = 13.44;
+//    string sd = to_string(d1);
+//    cout << sd << endl;
+//    cout << d << endl;
+//    string s = "pi = 3.1415E7, haha";
+//    double d = stod(s.substr(s.find_first_of("+-.0123456789")));
+//    cout << d << endl;
+
+
     //P288
-    string line, word;
-    vector<PersonInfo> people;
-    ifstream input("/Users/carl/Desktop/Temp/ForCpp/PersonInfo.txt");
-    if (input) {
-        while (getline(input, line)) {
-            PersonInfo info;
-            istringstream record(line);
-            record >> info.name;
-            while (record >> word) {
-                info.phones.push_back(word);
-            }
-            people.push_back(info);
-        }
-        for (const auto &person: people) {
-            cout << person.name << " ";
-            for (const auto phone: person.phones) {
-                cout << phone << " ";
-            }
-            cout << endl;
-        }
-    }
+//    string line, word;
+//    vector<PersonInfo> people;
+//    ifstream input("/Users/carl/Desktop/Temp/ForCpp/PersonInfo.txt");
+//    if (input) {
+//        while (getline(input, line)) {
+//            PersonInfo info;
+//            istringstream record(line);
+//            record >> info.name;
+//            while (record >> word) {
+//                info.phones.push_back(word);
+//            }
+//            people.push_back(info);
+//        }
+//        for (const auto &person: people) {
+//            cout << person.name << " ";
+//            for (const auto phone: person.phones) {
+//                cout << phone << " ";
+//            }
+//            cout << endl;
+//        }
+//    }
 
 
 

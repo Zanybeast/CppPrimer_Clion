@@ -16,6 +16,7 @@ struct Sales_data;
 Sales_data add (const Sales_data& lhs, const Sales_data& rhs);
 ifstream &read(ifstream &is, Sales_data& item);
 ostream &print(ostream &os, const Sales_data& item);
+ofstream &print(ofstream &os, const Sales_data& item);
 
 
 struct Sales_data
@@ -69,6 +70,11 @@ ostream &print(ostream &os, const Sales_data& item) {
     os << item.isbn() << " " << item.units_sold << " " << item.revenue << " " << item.avg_price();
     return os;
 };
+ofstream &print(ofstream &os, const Sales_data& item) {
+    os << item.isbn() << " " << item.units_sold << " " << item.revenue << " " << item.avg_price() << endl;
+    return os;
+};
+
 ifstream &read(ifstream &is, Sales_data& item) {
     double price = 0;
     is >> item.bookNo >> item.units_sold >> price;

@@ -17,14 +17,15 @@ ifstream &read(ifstream &is, Person& person);
 ostream &printPerson(ostream &os, const Person& person);
 
 class Person {
+    //友元函数
     friend ifstream &read(ifstream &is, Person& person);
     friend ostream &printPerson(ostream &os, const Person& person);
-    //构造函数
 public:
+    //构造函数
     Person() = default;
     Person(const string n, const string a) :
         name(n), address(a) { }
-    Person(ifstream &is) { read(is, *this); }
+    explicit Person(ifstream &is) { read(is, *this); }
     //成员函数
     string getName() const { return name; }
     string getAddress() const { return address; }

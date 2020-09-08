@@ -19,6 +19,8 @@ int main()
 
     ifstream input;
     input.open("/Users/carl/Desktop/Temp/ForCpp/SalesRecord.txt");
+    ofstream output("/Users/carl/Desktop/Temp/ForCpp/SalesResult.txt");
+//    ofstream output("/Users/carl/Desktop/Temp/ForCpp/SalesResult.txt", ofstream::app);
 
     Sales_data total;
     double price = 0.0;
@@ -33,11 +35,13 @@ int main()
             }
             else {
                 print(cout, total);
+                print(output, total);
                 cout << endl;
                 total = trans;
             }
         }
         print(cout, total);
+        print(output, total);
     } else {
         cerr << "No data?!" << endl;
         input.close();
@@ -45,6 +49,7 @@ int main()
     }
 
     input.close();
+    output.close();
 
     return 0;
 

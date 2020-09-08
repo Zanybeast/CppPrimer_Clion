@@ -4,6 +4,11 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <sstream>
+#include <fstream>
+#include <list>
+#include <deque>
+#include <forward_list>
 #include "Sales_data.h"
 #include "Person.h"
 #include "Screen.h"
@@ -12,6 +17,11 @@
 #define NDEBUG
 
 using namespace std;
+
+struct PersonInfo {
+    string name;
+    vector<string> phones;
+};
 
 int fact(int n) {
     int res = 1;
@@ -127,6 +137,14 @@ void f(int) {
 void f(double, double d = 3.55) {
     cout << "f(double, double d = 3.55)" << endl;
 }
+istream &E8_01(istream & input) {
+    string s;
+    while (input >> s)
+        cout << s << endl;
+
+    input.clear();
+    return input;
+}
 
 int sum(int a, int b) {
     return a + b;
@@ -141,29 +159,485 @@ int divide(int a, int b) {
     return a / b;
 }
 
+bool valid(string number) {
+    if (number.size() < 8)
+        return false;
+    return true;
+}
+string format(string number) {
+    string formatStr = "+86-" + number;
+    return formatStr;
+}
+
+bool findInt(vector<int>::iterator begin, vector<int>::iterator end, int sought) {
+    while (begin != end) {
+        if (*begin == sought)
+            return true;
+        begin++;
+    }
+    return false;
+}
+vector<int>::iterator findIntReturnIterator(vector<int>::iterator begin, vector<int>::iterator end, int sought) {
+    while (begin != end) {
+        if (*begin == sought)
+            return begin;
+        ++begin;
+    }
+    return end;
+}
+void printVector09(string s, vector<int> vi) {
+    cout << s << ": ";
+    for (const auto i: vi) {
+        cout << i << " ";
+    }
+    cout << endl;
+}
+
+void insertString09_28(forward_list<string> &fls, const string& s1, const string& s2) {
+    auto curr = fls.begin();
+    auto prev = fls.before_begin();
+    int count = 0;
+    while (curr != fls.end()) {
+        if (*curr == s1) {
+            curr = fls.insert_after(curr, s2);
+            ++count;
+        }
+        prev = curr;
+        ++curr;
+    }
+    if (curr == fls.end() && count == 0) {
+        fls.insert_after(prev, s2);
+    }
+}
+
 int chapter02();
 int chapter03();
 int chapter04();
 int chapter05();
 int chapter06();
 int chapter07() {
+    class C;
+    //E7.43
+    class NoDefault { ;
+        friend C;
+        NoDefault(int i) {}
+    };
+
+    class C {
+    public:
+        C() : nd(0) { };
+    private:
+        NoDefault nd;
+    };
+
+
+    //E7.41
+//    ifstream input;
+//    Sales_data s1;
+//    Sales_data s2 = Sales_data("empty");
+//    Sales_data s3 = Sales_data("ha", 2, 5);
+//    Sales_data s4 = Sales_data(input);
+
+
     //E7.27
-    Screen myScreen(5, 5, 'X');
-    myScreen.move(4, 0).set('#').display(cout);
-    cout << "\n";
-    myScreen.display(cout);
-    cout << "\n";
+//    Screen myScreen(5, 5, 'X');
+//    myScreen.move(4, 0).set('#').display(cout);
+//    cout << "\n";
+//    myScreen.display(cout);
+//    cout << "\n";
 
 
     //E7.11
 //    Sales_data s1("haha");
 //    Sales_data s2("good", 12, 2.5);
 };
+int chapter08() {
+    //E8.13
+    string line, word;
+    vector<PersonInfo> persons;
+    vector<string> lines;
+    ifstream input("/Users/carl/Desktop/Temp/ForCpp/PersonInfo.txt");
+    ofstream os("/Users/carl/Desktop/Temp/ForCpp/ResultForPhoneNumbers.txt");
+    if (input) {
+        istringstream record;
+        while (getline(input, line)) {
+            PersonInfo info;
+            lines.push_back(line);
+            record.clear();     //主要考察clear的使用
+            record.str(line);
+            record >> info.name;
+            while (record >> word) {
+                info.phones.push_back(word);
+            }
+            persons.push_back(info);
+        }
+    }
+    input.close();
+    for (const auto &person: persons) {
+        cout << person.name << " ";
+        for (const auto phone: person.phones) {
+            cout << phone << " ";
+        }
+        cout << endl;
+    }
+    for (const auto &entry: persons) {
+        ostringstream formatted, badNums;
+        for (const auto &nums: entry.phones) {
+            if (!valid(nums)) {
+                badNums << " " << nums;
+            } else {
+                formatted << " " << format(nums);
+            }
+        }
+        if (badNums.str().empty()) {
+            os << entry.name << " " << formatted.str() << endl;
+        } else {
+            os << "input error: " << entry.name
+                << " invalid number(s) " << badNums.str() << endl;
+        }
+    }
+    os.close();
+
+
+
+    //E8.11
+//    string line, word;
+//    vector<PersonInfo> persons;
+//    vector<string> lines;
+//    ifstream input("/Users/carl/Desktop/Temp/ForCpp/PersonInfo.txt");
+//    if (input) {
+//        istringstream record;
+//        while (getline(input, line)) {
+//            PersonInfo info;
+//            lines.push_back(line);
+//            record.clear();     //主要考察clear的使用
+//            record.str(line);
+//            record >> info.name;
+//            while (record >> word) {
+//                info.phones.push_back(word);
+//            }
+//            persons.push_back(info);
+//        }
+//    }
+//    input.close();
+//    for (const auto &person: persons) {
+//        cout << person.name << " ";
+//        for (const auto phone: person.phones) {
+//            cout << phone << " ";
+//        }
+//        cout << endl;
+//    }
+
+
+    //E8.10
+//    ifstream input("/Users/carl/Desktop/Temp/ForCpp/aTextForCpp.txt");
+//    if (input) {
+//        vector<string> vs;
+//        string line, word;
+//        while (getline(input, line)) {
+//            vs.push_back(line);
+//        }
+//        for (const auto &l: vs) {
+//            istringstream is(l);
+//            while (is >> word) {
+//                cout << word << endl;
+//            }
+//        }
+//    }
+
+
+    //E8.9
+//    istringstream is("Hello my wife");
+//    E8_01(is);
+
+
+    //E8.5
+//    ifstream input("/Users/carl/Desktop/Temp/ForCpp/aTextForCpp.txt");
+//    vector<string> vs;
+//    string word;
+//    if (input) {
+//        while (input >> word) {
+//            vs.push_back(word);
+//        }
+//    }
+//    int count = 0;
+//    for (const auto l: vs) {
+//        cout << l << endl;
+//        cout << ++count << endl;
+//    }
+
+
+    //E8.4
+//    ifstream input("/Users/carl/Desktop/Temp/ForCpp/aTextForCpp.txt");
+//    vector<string> vs;
+//    string line;
+//    if (input) {
+//        while (getline(input, line)) {
+//            vs.push_back(line);
+//        }
+//    }
+//    for (const auto l: vs) {
+//        cout << l << "------" << endl;
+//    }
+
+
+    //E8.1
+//    istream &is = E8_01(cin);
+//    cout << is.rdstate() << endl;
+}
+int chapter09() {
+    //E9.43
+
+
+
+    //E9.41
+//    vector<char> vc{'H', 'e', 'l', 'l', 'o'};
+//    string s(vc.begin(), vc.end());
+//    cout << s << endl;
+
+
+    //E9.39
+//    ofstream writeFile("/Users/carl/Desktop/Temp/ForCpp/C09_39.txt");
+//    if (writeFile) {
+//        int row = 20;
+//        int column = 50;
+//        for (int i = 0; i < row; ++i) {
+//            for (int j = 0; j < column; ++j) {
+//                writeFile << "abc" << " ";
+//            }
+//            writeFile << endl;
+//        }
+//    }
+//    writeFile.close();
+//    vector<string> svec;
+//    svec.reserve(1024);
+//    string word;
+//    ifstream input("/Users/carl/Desktop/Temp/ForCpp/C09_39.txt");
+//    if (input) {
+//        while (input >> word)
+//            svec.push_back(word);
+//    }
+//    svec.resize(svec.size() + svec.size() / 2);
+//    cout << "svec capacity: " << svec.capacity() << endl;
+//    input.close();
+
+
+    //E9.38
+//    vector<string> vs;
+//    string word;
+//    while (cin >> word) {
+//        vs.push_back(word);
+//        cout << "size of vector: " << vs.size()
+//            << ", and capacity of vector: " << vs.capacity() << endl;
+//    }
+
+
+    //E9.31
+//    list<int> vi = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+//    auto iter = vi.begin();
+//    while (iter != vi.end()) {
+//        if (*iter % 2) {
+//            iter = vi.insert(iter, *iter);
+//            advance(iter, 2);
+////            iter += 2;
+//        }
+//        else
+//            iter = vi.erase(iter);
+//    }
+//
+//    for (auto i : vi) cout << i << " ";
+
+
+    //E9.28
+//    forward_list<string> fls{"hello", "my", "a", "good ", "food", "my", "od", "jason", "baby", "fuck"};
+//    insertString09_28(fls, "my", "your");
+//    for (const auto &s: fls) {
+//        cout << s << " ";
+//    }
+//    cout << endl;
+//    insertString09_28(fls, "donald", "endofworld");
+//    for (const auto &s: fls) {
+//        cout << s << " ";
+//    }
+
+
+    //E9.27
+//    forward_list<int> fli {1, 2, 3, 4, 5, 6, 7, 8};
+//    auto prev = fli.before_begin();
+//    auto curr = fli.begin();
+//    while (curr != fli.end()) {
+//        if (*curr & 0x1) {
+//            curr = fli.erase_after(prev);
+//        } else {
+//            prev = curr;
+//            ++curr;
+//        }
+//    }
+//    for (const auto i: fli) {
+//        cout << i << " " ;
+//    }
+
+
+    //E9.26
+//    int ia[] = {0, 1, 1, 2, 3, 4, 5, 8, 13, 21, 55, 89};
+//    vector<int> vi(begin(ia), end(ia));
+//    list<int> li(begin(ia), end(ia));
+//    auto viB = vi.begin();
+//    while (viB != vi.end()) {
+//        if (*viB % 2 == 0) {
+//            viB = vi.erase(viB);
+//        } else {
+//            ++viB;
+//        }
+//    }
+//    auto liB = li.begin();
+//    while (liB != li.end()) {
+//        if (*liB % 2 != 0) {
+//            liB = li.erase(liB);
+//        } else
+//            ++liB;
+//    }
+//    for (const auto i: vi) {
+//        cout << i << " ";
+//    }
+//    cout << endl;
+//    for (const auto i: li) {
+//        cout << i << " ";
+//    }
+
+
+    //E9.22
+//    vector<int> vi{1, 1, 1, 3, 4, 1, 5, 8, 12, 3, 1, 9};
+//    auto cursor = vi.size() / 2;
+//    auto it = vi.begin(), mid = vi.begin() + cursor;
+//    while (it != mid) {
+//        if (*it == 1) {
+//            it = vi.insert(it, 1 * 2);
+//            ++it;
+//            ++cursor;
+//            mid = vi.begin() + cursor;
+//        }
+//        ++it;
+//    }
+//    for (const auto i: vi) {
+//        cout << i << " ";
+//    }
+
+
+    //E9.20
+//    list<int> li{1, 2, 3, 4, 5, 6, 7, 8};
+//    deque<int> odd;
+//    deque<int> even;
+//    for (auto it = li.cbegin(); it != li.cend(); ++it) {
+//        if ((*it) % 2 == 0) {
+//            even.push_back(*it);
+//        } else {
+//            odd.push_back(*it);
+//        }
+//    }
+//    for (const auto i: odd) {
+//        cout << i << " " ;
+//    }
+//    cout << endl;
+//    for (const auto i: even) {
+//        cout << i << " " ;
+//    }
+
+    //E9.18
+//    string word;
+//    list<string> ds;
+//    while (cin >> word) {
+//        ds.push_back(word);
+//    }
+//    for (auto it = ds.begin(); it != ds.end(); ++it) {
+//        cout << *it << " ";
+//    }
+
+
+    //E9,16
+//    vector<int> vi{12, 4, 5, 6, 8};
+//    list<int> li{12, 4, 5, 6, 8};
+//    vector<int> temp(li.begin(), li.end());
+//    if (vi == temp) {
+//        cout << "vi == li" << endl;
+//    } else {
+//        cout << "vi != li" << endl;
+//    }
+//    cout << boolalpha << (vi == temp) << endl;
+
+
+    //E9.15
+//    vector<int> vi1{12, 4, 5, 6, 8};
+//    vector<int> vi2{12, 4, 5, 6, 8};
+//    if (vi1 == vi2) {
+//        cout << "vi1 == vi2" << endl;
+//    } else {
+//        cout << "vi1 != vi2" << endl;
+//    }
+
+
+    //E9.14
+//    list<const char *> lc {"hello", "my", "baby"};
+////    vector<string> vs(lc.cbegin(), lc.cend());
+//    vector<string> vs;
+//    vs.assign(lc.cbegin(), lc.cend());
+//    for (const auto &w: vs) {
+//        cout << w << " " ;
+//    }
+
+
+
+    //E9.13
+//    list<int> li = {3, 5, 7, 9, 11};
+//    vector<double> vd1(li.begin(), li.end());
+//    for(const auto e: vd1) {
+//        cout << e << " ";
+//    }
+//    cout << endl;
+//    vector<int> vi = {12, 4, 5, 8, 3, 9};
+//    vector<double> vd2(vi.begin(), vi.end());
+//    for(const auto e: vd2) {
+//        cout << e << " ";
+//    }
+
+
+    //E9.11
+//    vector<int> vi1(10);
+//    printVector09("vi1", vi1);
+//    vector<int> vi2(10, 5);
+//    printVector09("vi2", vi2);
+//    vector<int> vi3{1, 3, 5, 7, 9};
+//    printVector09("vi3", vi3);
+//    vector<int> vi4(vi3);
+//    printVector09("vi4", vi4);
+//    vector<int> vi5 = vi4;
+//    printVector09("vi5", vi5);
+//    vector<int> vi6 = {1, 2, 4, 8, 10};
+//    printVector09("vi6", vi6);
+//    vector<int> vi7(vi6.begin(), vi6.end());
+//    printVector09("vi7", vi7);
+
+
+    //E9.4
+//    vector<int> vi = {12, 5, 8, 33, 19, 60};
+//    if (findInt(vi.begin(), vi.end(), 60))
+//        cout << "Element found." << endl;
+//    else
+//        cout << "Not Found!!!" << endl;
+
+
+    //E9.2
+//    list<deque<int>> lqint;
+}
 
 int main()
 {
     cout << "ForExercises--\n";
-    chapter07();
+    chapter09();
+
+//    chapter08();
+
+//    chapter07();
 
 //    chapter06();
 

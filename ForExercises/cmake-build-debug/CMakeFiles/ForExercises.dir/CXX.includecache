@@ -45,6 +45,16 @@ string
 -
 vector
 -
+sstream
+-
+fstream
+-
+list
+-
+deque
+-
+forward_list
+-
 Sales_data.h
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Sales_data.h
 Person.h

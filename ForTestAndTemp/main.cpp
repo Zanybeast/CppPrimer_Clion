@@ -5,6 +5,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <sstream>
 
 using namespace std;
 
@@ -13,9 +14,42 @@ size_t count_calls() {
     ctr += 1;
     return ++ctr;
 }
+struct PersonInfo {
+    string name;
+    vector<string> phones;
+};
 
 int main()
 {
+    //P288
+    string line, word;
+    vector<PersonInfo> people;
+    ifstream input("/Users/carl/Desktop/Temp/ForCpp/PersonInfo.txt");
+    if (input) {
+        while (getline(input, line)) {
+            PersonInfo info;
+            istringstream record(line);
+            record >> info.name;
+            while (record >> word) {
+                info.phones.push_back(word);
+            }
+            people.push_back(info);
+        }
+        for (const auto &person: people) {
+            cout << person.name << " ";
+            for (const auto phone: person.phones) {
+                cout << phone << " ";
+            }
+            cout << endl;
+        }
+    }
+
+
+
+
+//    cout << "Hello" << endl;
+//    cout << "Hello" << flush << endl;
+//    cout << "Hello" << ends << "Ha" << endl;
 
 
 //    for (size_t i = 0; i != 10; ++i) {

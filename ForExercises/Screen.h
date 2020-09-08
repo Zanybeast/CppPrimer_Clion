@@ -12,6 +12,8 @@ using namespace std;
 
 class Screen {
 public:
+    //友元函数
+    friend class Window_mgr;
     //类型别名
     typedef string::size_type pos;
     //构造函数
@@ -33,6 +35,8 @@ public:
     const Screen &display(ostream &os) const {
         do_display(os); return *this;
     }
+
+    pos size() const;
 private:
     pos cursor = 0;
     pos height = 0, width = 0;
@@ -42,6 +46,10 @@ private:
 
     void do_display(ostream &os) const { os << contents; }
 };
+
+Screen::pos Screen::size() const {
+    return height * width;
+}
 
 void Screen::some_member() const {
     ++access_ctr;

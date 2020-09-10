@@ -5,6 +5,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <list>
 #include <sstream>
 
 using namespace std;
@@ -21,6 +22,38 @@ struct PersonInfo {
 
 int main()
 {
+    //P360
+//    vector<int> vi{1, 3, 5, 5, 12, 9, 44, 19, 23, 5, 988, 56, 56, 5, 44};
+//    ostream_iterator<int> out_iter(cout, " ");
+//    copy(vi.begin(), vi.end(), out_iter);
+
+
+    //P359
+//    vector<int> vi;
+//    istream_iterator<int> in_iter(cin);
+//    istream_iterator<int> eof;
+//    while (in_iter != eof) {
+//        vi.push_back(*in_iter++);
+//    }
+//    for (const auto i: vi) cout << i << " ";
+
+    //P359
+//    list<int> lst = {1, 2, 3, 4};
+//    list<int> lst2, lst3;
+//    copy(lst.cbegin(), lst.cend(), front_inserter(lst2));
+//    copy(lst.cbegin(), lst.cend(), inserter(lst3, lst3.begin()));
+//    for_each(lst2.begin(), lst2.end(), [](int i){cout << i << " ";});
+//    cout << endl;
+//    for_each(lst3.begin(), lst3.end(), [](int i){cout << i << " ";});
+
+
+    //P336
+//    int ia[] = {32, 210, 12, 34, 47, 109, 83};
+//    int val = 109;
+//    int *result = find(begin(ia), end(ia), val);
+//    cout << *result << endl;
+
+
     //P328
 //    int i = 42;
 //    string s = to_string(i);

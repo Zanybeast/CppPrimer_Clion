@@ -1,5 +1,5 @@
 // ForExercises.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+// Using LLVM/Clang to compile program
 
 #include <iostream>
 #include <string>
@@ -10,6 +10,15 @@
 #include <deque>
 #include <forward_list>
 #include <stack>
+#include <numeric>
+#include <algorithm>
+#include <iterator>
+#include <map>
+#include <set>
+#include <cctype>
+#include <functional>
+#include <utility>
+
 #include "Sales_data.h"
 #include "Person.h"
 #include "Screen.h"
@@ -19,11 +28,32 @@
 #define NDEBUG
 
 using namespace std;
+using namespace std::placeholders;
 
 struct PersonInfo {
     string name;
     vector<string> phones;
 };
+
+static const string aTextForCpp = "../Data/aTextForCpp.txt";
+static const string SalesRecord = "../Data/SalesRecord.txt";
+static const string C10_33R = "../Data/C10_33R.txt";
+static const string C10_33WOdd = "../Data/C10_33WOdd.txt";
+static const string C10_33WEven = "../Data/C10_33WEven.txt";
+static const string textRepeated = "../Data/textRepeated.txt";
+static const string familyNames = "../Data/FamilyNames.txt";
+static const string familyNamesAndBirthday = "../Data/NameAndBirthday.txt";
+
+vector<string> readATextFromFile() {
+    vector<string> vec;
+    ifstream input("/Users/carl/Desktop/Temp/ForCpp/aTextForCpp.txt");
+    string s;
+    if (input) {
+        while (input >> s)
+            vec.push_back(s);
+    }
+    return vec;
+}
 
 int fact(int n) {
     int res = 1;
@@ -287,6 +317,166 @@ void findString09_48(string &s) {
     for (string::size_type pos = 0; (pos = s.find_first_not_of(numbers, pos)) != string::npos; ++pos) {
         cout << "s[" << pos << "] = " << s[pos] << endl;
     }
+
+}
+void elimDups(vector<string> &vec) {
+    sort(vec.begin(), vec.end());
+    auto end_unique = unique(vec.begin(), vec.end());
+    vec.erase(end_unique, vec.end());
+}
+
+bool compareIsbn(const Sales_data &s1, const Sales_data &s2) {
+    return s1.isbn() < s2.isbn();
+}
+bool longerThan5(string &s) {
+    return s.size() > 5;
+}
+void biggies(vector<string> &words, vector<string>::size_type sz) {
+    elimDups(words);
+    stable_sort(words.begin(), words.end(), [](const string &a, const string &b) { return a.size() < b.size(); });
+    auto wc = find_if(words.begin(), words.end(), [sz](const string &a) { return a.size() >= sz; });
+
+    auto count = words.end() - wc;
+    cout << count << " " << make_plural(count, "word", "s")
+        << " of length " << sz << "or longer" << endl;
+    for_each(wc, words.end(), [](const string &s) {cout << s << " ";});
+    cout << endl;
+}
+void biggies_partition(vector<string> &words, vector<string>::size_type sz) {
+    elimDups(words);
+    stable_sort(words.begin(), words.end(), [](const string &a, const string &b) { return a.size() < b.size(); });
+    auto wc = partition(words.begin(), words.end(), [sz](const string &s) {return s.size() < sz;});
+
+    auto count = words.end() - wc;
+    cout << count << " " << make_plural(count, "word", "s")
+         << " of length " << sz << "or longer" << endl;
+    for_each(wc, words.end(), [](const string &s) {cout << s << " ";});
+    cout << endl;
+}
+void biggies_stable_partition(vector<string> &words, vector<string>::size_type sz) {
+    elimDups(words);
+    stable_sort(words.begin(), words.end(), [](const string &a, const string &b) { return a.size() < b.size(); });
+    auto wc = stable_partition(words.begin(), words.end(), [sz](const string &s) {return s.size() < sz;});
+
+    auto count = words.end() - wc;
+    cout << count << " " << make_plural(count, "word", "s")
+         << " of length " << sz << "or longer" << endl;
+    for_each(wc, words.end(), [](const string &s) {cout << s << " ";});
+    cout << endl;
+}
+bool lessThanOrEqualTo(const string &s, string::size_type sz) {
+    return s.size() > sz;
+}
+
+bool check_size(const string &s, string::size_type sz) {
+    return s.size() < sz;
+}
+inline vector<int>::const_iterator find_first_bigger(const vector<int> &vec, const string &s) {
+    return find_if(vec.begin(), vec.end(), bind(check_size, s, _1));
+}
+void biggies_check_size_bind(vector<string> &words, vector<string>::size_type sz) {
+    elimDups(words);
+    stable_sort(words.begin(), words.end(), [](const string &a, const string &b) { return a.size() < b.size(); });
+    auto wc = stable_partition(words.begin(), words.end(), bind(check_size, _1, sz));
+
+    auto count = words.end() - wc;
+    cout << count << " " << make_plural(count, "word", "s")
+         << " of length " << sz << "or longer" << endl;
+    for_each(wc, words.end(), [](const string &s) {cout << s << " ";});
+    cout << endl;
+}
+void writeNumbers10_33(const string& inputFile, const string &outputOdd, const string &outputEven) {
+    ifstream input(inputFile);
+    if (input) {
+        ofstream out_Odd(outputOdd);
+        ofstream out_Even(outputEven);
+        if (out_Odd && out_Even) {
+            istream_iterator<int> in_iter(input), eof;
+            ostream_iterator<int> out_odd(out_Odd, " ");
+            ostream_iterator<int> out_even(out_Even, "\n");
+            while (in_iter != eof) {
+                if (*in_iter & 0x1) {
+                    *out_odd++ = *in_iter++;
+                } else {
+                    *out_even++ = *in_iter++;
+                }
+            }
+        }
+    }
+}
+void elimDupsByList(list<string> &li) {
+    li.sort();
+    li.unique();
+}
+void addFamily11_07(istream &is) {
+    map<string, vector<string>> nameMap;
+//    cout << "Please enter your name: " << endl;
+    string name;
+    while (getline(is, name)) {
+        auto space = find_if(name.begin(), name.end(), ::isspace);
+        string firstName(name.begin(), space);
+        string lastName(++space, name.end());
+        nameMap[lastName].push_back(firstName);
+    }
+    for (auto &name: nameMap) {
+        for (auto &last: nameMap[name.first]) {
+            cout << last << " " << name.first << endl;
+        }
+    }
+}
+void writeDataInFileWithNameAndBirthday(map<string, vector<pair<string, string>>> families) {
+    ofstream output(familyNamesAndBirthday);
+    if (output) {
+        for (auto &item: families) {
+            for (auto &member: families[item.first]) {
+                output << member.first << " " << item.first << " " << member.second << endl;
+            }
+        }
+    }
+}
+void addFamilyNameAndBirthday11_14() {
+    map<string, vector<pair<string, string>>> families;
+    string word;
+
+    string lastName, firstName, birthday;
+    cout << "Please enter your last name(press Control + Z to exit): " << endl;
+    while (cin >> word) {
+        lastName = word;
+        cout << "Please enter your members name: " << endl;
+        while (cin >> firstName) {
+            /*Clear the input stream buffer because if not
+             * it would cause the getline to read the input stream buffer immediately
+             * while there's still a next line in the buffer
+             * so the birthday would would always be empty*/
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+            cout << "Please enter the birthday: " << endl;
+            getline(cin, birthday);
+            families[lastName].push_back(make_pair(firstName, birthday));
+            writeDataInFileWithNameAndBirthday(families);
+            cout << "Want to add more family members? (Y for yes and N for no): " << endl;
+            while (cin >> word) {
+                if (word == "Y" || word == "y") {
+                    cout << "Please enter your members name: " << endl;
+                    break;
+                } else if (word == "N" || word == "n") {
+                    cout << "Please enter your last name(press Control + Z to exit): " << endl;
+                    break;
+                } else {
+                    cout << "Wrong input, please enter the legal context: " << endl;
+                }
+            }
+
+            if (word == "Y" || word == "y")
+                continue;
+            else
+                break;
+        }
+        continue;
+    }
+}
+void deleteItemOnMap(multimap<string, string> &mm) {
 
 }
 
@@ -1512,12 +1702,417 @@ int chapter09() {
 
     //E9.2
 //    list<deque<int>> lqint;
+
+    return 0;
+}
+int chapter10() {
+    //E10.42
+//    list<string> li{"hello", "my", "name", "is", "jack", "fox", "hello", "jason", "fuck", "man", "you", "are", "my", "baby"};
+//    elimDupsByList(li);
+//    for (const auto &s: li) cout << s << " ";
+
+
+    //E10.37
+//    vector<int> vi{1, 3, 5, 5, 12, 9, 44, 19, 23, 5, 988, 56, 56, 5, 44};
+//    list<int> li(5);
+//    auto beg = vi.cbegin();
+//    auto pos3 = beg + 2, pos7 = beg + 6;
+//    reverse_copy(pos3, pos7, li.begin());
+//    for (auto i: li) cout << i << " ";
+//    li.reverse();
+
+
+    //E10.36
+//    list<int> li{1, 3, 99, 0, 18, 12, 9, 0, 44, 19, 23, 5, 988, 56, 56, 0, 5, 44};
+//    auto pos = find(li.crbegin(), li.crend(), 0);
+//    cout << *pos << " found in front of " << *pos.base() << endl;
+
+    //E10.33
+//    vector<int> vi{1, 3, 5, 0, 5, 12, 9, 0, 44, 19, 23, 5, 988, 56, 56, 0, 5, 44};
+//    auto beg = vi.cbegin(), end = vi.cend();
+//    auto final = --end;
+//    while (final != beg) {
+//        cout << *final << " ";
+//        --final;
+//    }
+//    cout << *beg << endl;
+
+
+    //E10.32
+//    vector<int> vi{1, 3, 5, 5, 12, 9, 44, 19, 23, 5, 988, 56, 56, 5, 44};
+//    for_each(vi.crbegin(), vi.crend(), [](int i){cout << i << " ";});
+
+    //E10.33
+//    writeNumbers10_33(C10_33R, C10_33WOdd, C10_33WEven);
+
+
+    //E10.31
+//    ifstream input(SalesRecord);
+//    if (input) {
+//        istream_iterator<Sales_data> in_iter(input), eof;
+//        ostream_iterator<Sales_data> out_iter(cout, "\n");
+//        vector<Sales_data> vec;
+//        while (in_iter != eof) {
+//            vec.push_back(*in_iter++);
+//        }
+//        sort(vec.cbegin(), vec.cend(),
+//             [](const Sales_data & s1, const Sales_data &s2) { return s1.isbn() < s2.isbn(); });
+//        for (auto beg = vec.begin(), end = vec.end(); beg != end; beg = end) {
+//            end = find_if(beg, vec.cend(), [beg](const Sales_data& salesData) { return salesData.isbn() != beg->isbn();});
+//            cout << accumulate(beg, end, Sales_data(beg->isbn())) << endl;
+//        }
+//    }
+
+
+    //E10.30
+//    istream_iterator<int> in_iter(cin), eof;
+//    ostream_iterator<int> os_iter(cout, " ");
+//    vector<int> vi;
+//    copy(in_iter, eof, back_inserter(vi));
+//    sort(vi.begin(), vi.end());
+//    unique_copy(vi.begin(), vi.end(), os_iter);
+
+
+    //E10.29
+//    ifstream input(aTextForCpp);
+//    istream_iterator<string> str_iter(input), eof;
+//    ostream_iterator<string> os_iter(cout, " ");
+//    vector<string> vs;
+//    copy(str_iter, eof, back_inserter(vs));
+//    copy(vs.begin(), vs.end(), os_iter);
+
+
+    //E10.28
+//    vector<int> vi {1, 2, 3, 4, 5, 6, 7, 8, 9};
+//    list<int> li1, li2, li3, li4;
+//    copy(vi.begin(), vi.end(), inserter(li1, li1.begin()));
+//    copy(vi.begin(), vi.end(), inserter(li2, li2.end()));
+//    copy(vi.begin(), vi.end(), back_inserter(li3));
+//    copy(vi.begin(), vi.end(), front_inserter(li4));
+//    for (auto i: li1) cout << i << " ";
+//    cout << endl;
+//    for (auto i: li2) cout << i << " ";
+//    cout << endl;
+//    for (auto i: li3) cout << i << " ";
+//    cout << endl;
+//    for (auto i: li4) cout << i << " ";
+//    cout << endl;
+
+
+    //10.27
+//    vector<int> vi{1, 3, 5, 5, 12, 9, 44, 19, 23, 5, 988, 56, 56, 5, 44};
+//    list<int> li;
+//    unique_copy(vi.begin(), vi.end(), front_inserter(li));
+//    for (auto i: li) cout << i << " " ;
+
+
+    //E10.25
+//    vector<string> vec = readATextFromFile();
+//    biggies_check_size_bind(vec, 13);
+
+    //E10.24
+//    string s("hellokitty");
+//    vector<int> vi{6, 3, 5, 8, 12, 9, 44};
+//    cout << *find_first_bigger(vi, s);
+
+
+    //E10.22
+//    vector<string> vec = readATextFromFile();
+//    auto res = count_if(vec.begin(), vec.end(), bind(lessThanOrEqualTo, _1, 13));
+//    cout << res << endl;
+
+    //E10.21
+//    int a = 10;
+//    auto decrementToZero = [&a]() mutable -> bool  {
+//        if (a == 0) return true;
+//        else {
+//            --a;
+//            return false;
+//        }
+//    };
+//    while (!decrementToZero()) {
+//        cout << a << " ";
+//    }
+
+
+    //E10.20
+//    vector<string> vec = readATextFromFile();
+//    auto res = count_if(vec.begin(), vec.end(), [](const string &s) {return s.size() > 13;});
+//    cout << res << endl;
+
+
+    //E10.19
+//    vector<string> vec = readATextFromFile();
+//    biggies_stable_partition(vec, 13);
+
+
+    //E10.18
+//    vector<string> vec = readATextFromFile();
+//    biggies_partition(vec, 13);
+
+
+    //E10.17
+//    ifstream input(SalesRecord);
+//    vector<Sales_data> vec;
+//    Sales_data s;
+//    if (input) {
+//        while (read(input, s)) {
+//            vec.push_back(s);
+//        }
+//    }
+//    sort(vec.begin(), vec.end(), [](Sales_data &s1, Sales_data &s2) {
+//        return s1.isbn() < s2.isbn();
+//    });
+//    for (const auto &s: vec) {
+//        print(cout, s);
+//        cout << endl;
+//    }
+
+    //E10.16
+//    vector<string> vec = readATextFromFile();
+//    biggies(vec, 13);
+
+
+    //E10.14
+//    int a = 10, b = 20;
+//    auto add = [](int a, int b) {return a + b;};
+//    auto add2 = [a](int c) {return a + c;};
+////    [b] add3(int) = [b] (int another) {return b - another;};
+//    cout << add(a, b) << endl;
+//    cout << add2(30) << endl;
+////    cout << add3(3) << endl;
+
+
+    //E10.13
+//    vector<string> vec{"hellooo", "my", "name", "isfsafsd", "jack", "fox", "hello", "jasonnnn", "fuckuuu", "man", "you", "are", "my", "baby"};
+//    auto divider = partition(vec.begin(), vec.end(), longerThan5);
+//    for (auto it = vec.begin(); it != divider; ++it) {
+//        cout << *it << " " ;
+//    }
+
+    //E10.12
+//    ifstream input("/Users/carl/Desktop/Temp/ForCpp/SalesRecord.txt");
+//    vector<Sales_data> vec;
+//    Sales_data s;
+//    if (input) {
+//        while (read(input, s)) {
+//            vec.push_back(s);
+//        }
+//    }
+//    sort(vec.begin(), vec.end(), compareIsbn);
+//    for (const auto &s: vec) {
+//        print(cout, s);
+//        cout << endl;
+//    }
+
+
+    //E10.9
+//    vector<string> vec{"hello", "my", "name", "is", "jack", "fox", "hello", "jason", "fuck", "man", "you", "are", "my", "baby"};
+//    elimDups(vec);
+//    stable_sort(vec.begin(), vec.end(), isShorter);
+//    for (const auto &s : vec) cout << s << " ";
+//    cout << endl;
+
+
+    //E10.7
+//    vector<int> vec; list<int> lst; int i;
+//    while (cin >> i)
+//        lst.push_back(i);
+//    copy(lst.cbegin(), lst.cend(), back_inserter(vec));
+//    for (const auto &i: vec) cout << i << " ";
+
+//    vector<int> vec;
+//    vec.reserve(10);
+//    fill_n(vec.begin(), 10, 0);
+//    for (const auto &i: vec) cout << i << " ";
+
+
+    //E10.6
+//    vector<int> vi{1, 3, 5, 5, 12, 9, 44, 19, 23, 5, 988, 56, 56, 5, 44};
+//    fill_n(vi.begin(), vi.size(), 0);
+//    for (const auto& e: vi) {
+//        cout << e << " " ;
+//    }
+//    cout << endl;
+
+
+    //E10.3
+//    vector<int> vi{1, 3, 5, 5, 12, 9, 44, 19, 23, 5, 988, 56, 56, 5, 44};
+//    int sum = accumulate(vi.cbegin(), vi.cend(), 0);
+//    cout << "sum = " << sum << endl;
+
+
+    //E10.1
+//    vector<int> vi{1, 3, 5, 5, 12, 9, 44, 19, 23, 5, 988, 56, 56, 5, 44};
+//    cout << count(vi.begin(), vi.end(), 5) << endl;
+}
+int chapter11() {
+    //E11.31
+    multimap<string, string> mm;
+
+
+    //E11.28
+    /*map<string, vector<int>> m;
+    map<string, vector<int>>::iterator res = m.find("fuck");*/
+
+    //E11.26
+    /*map<string, vector<int>> m;
+    string s = "hello";
+    vector<int> vi;
+    m[s] = vector<int>{12, 5};
+    vi = m[s];*/
+
+    //E11.22
+    /*map<string ,vector<int>> m;
+    pair<map<string, vector<int>>::iterator, bool> res = m.insert(make_pair("hello", vector<int>({13})));*/
+
+    //E11.20
+    /*map<string, size_t> word_count;
+    string word;
+    ifstream input(textRepeated);
+    if (input) {
+        while (input >> word) {
+            for (auto &c: word) {
+                c = toupper(c);
+            }
+            word.erase(remove_if(word.begin(), word.end(), ::ispunct), word.end());
+//            ++word_count[word];
+            auto res = word_count.insert(make_pair(word, 1));
+            if (!res.second) {
+                ++res.first->second;
+            }
+        }
+        for (const auto &w: word_count) {
+            cout << w.first << " occurs " << w.second
+                 << ((w.second > 1) ? " times" : " time") << endl;
+        }
+    } else {
+        cout << "Failed to open file." << endl;
+    }*/
+
+    //E11.19
+    /*multiset<Sales_data, decltype(compareIsbn)*> bookstore(compareIsbn);
+    using CmpISBN = bool (*)(const Sales_data&, const Sales_data&);
+    multiset<Sales_data, CmpISBN>::iterator c_it = bookstore.begin();*/
+
+    //E11.18
+//    map<string, size_t>::const_iterator;
+
+    //E11.16
+    /*map<string, string> m;
+    m["Jack"] = "Man";
+    auto it = m.begin();
+    it->second = "Fuck";*/
+
+    //E11.14
+//    addFamilyNameAndBirthday11_14();
+
+    //E11.13
+    /*make_pair("hello", 12);
+    pair<string, int> p("yeah", 45);
+    pair<string, int> p2 = {"fuck", 22};*/
+
+    //E11.12
+    /*string s;
+    int i;
+    vector<pair<string, int>> vp;
+    while (cin >> s >> i) {
+        vp.push_back(make_pair(s, i));
+    }
+    for (auto &e: vp) {
+        cout << e.first << " " << e.second << endl;
+    }*/
+
+    //E11.9
+    /*map<string, list<int>> words;
+    map<vector<int>::iterator, int> vcmap;
+    map<list<int>::iterator, int> limap;
+    std::vector<int> vi;
+    vcmap.insert(std::pair<std::vector<int>::iterator, int>(vi.begin(), 0));
+
+    //! but when using this one the compiler complained that
+    //! error: no match for 'operator<' in '__x < __y'
+    std::list<int> li;
+    limap.insert(std::pair<std::list<int>::iterator, int>(li.begin(), 0));*/
+
+    //E11.8
+    /*ifstream input(aTextForCpp);
+    if (input) {
+        string word;
+        vector<string> vc;
+        while (input >> word) {
+            if (find(vc.begin(), vc.end(), word) == vc.end()) {
+                vc.push_back(word);
+            }
+        }
+
+        for (const auto &s: vc) cout << s << endl;
+    }*/
+
+    //E11.7
+    /*ifstream input(familyNames);
+    if (input) {
+        addFamily11_07(input);
+    }*/
+
+    //E11.4
+    /*map<string, size_t> word_count;
+    string word;
+    ifstream input(textRepeated);
+    if (input) {
+        while (input >> word) {
+            for (auto &c: word) {
+                c = toupper(c);
+            }
+            word.erase(remove_if(word.begin(), word.end(), ::ispunct), word.end());
+            ++word_count[word];
+        }
+        for (const auto &w: word_count) {
+            cout << w.first << " occurs " << w.second
+                 << ((w.second > 1) ? " times" : " time") << endl;
+        }
+    } else {
+        cout << "Failed to open file." << endl;
+    }*/
+
+
+    return 0;
+}
+void testAndVerify() {
+    //P389
+    /*set<int> s = {12, 4, 5, 6, 9, 8, 99, 100, 100};
+    auto it = s.lower_bound(7);
+    cout << *it << endl;*/
+
+    //For
+//    cout << __VERSION__ << endl;
+
+    //P374
+//    map<string, size_t> word_count;
+//    string word;
+//    ifstream input(aTextForCpp);
+//    while (input >> word) {
+//        ++word_count[word];
+//    }
+//    for (const auto &w: word_count) {
+//        cout << w.first << " occurs " << w.second
+//            << ((w.second > 1) ? " times" : "time") << endl;
+//    }
+
+    //P364
+//    string line{"FIRST,MIDDLE,LAST"};
+//    auto rcomma = find(line.crbegin(), line.crend(), ',');
+//    cout << string(rcomma.base(), line.cend()) << endl;
 }
 
 int main()
 {
     cout << "ForExercises--\n";
-    chapter09();
+    testAndVerify();
+    chapter11();
+//    chapter10();
+
+//    chapter09();
 
 //    chapter08();
 

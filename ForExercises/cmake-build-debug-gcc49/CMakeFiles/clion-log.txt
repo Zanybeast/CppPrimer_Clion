@@ -1,0 +1,4 @@
+"/Users/carl/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.6397.106/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/local/Cellar/gcc@4.9/4.9.4_2/bin/gcc-4.9 -DCMAKE_CXX_COMPILER=/usr/local/Cellar/gcc@4.9/4.9.4_2/bin/g++-4.9 -G "CodeBlocks - Unix Makefiles" /Users/carl/Desktop/01Project/Cpp/ForExercises
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug-gcc49

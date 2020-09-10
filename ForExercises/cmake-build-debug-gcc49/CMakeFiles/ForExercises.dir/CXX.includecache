@@ -77,10 +77,6 @@ set
 -
 cctype
 -
-functional
--
-utility
--
 Sales_data.h
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Sales_data.h
 Person.h

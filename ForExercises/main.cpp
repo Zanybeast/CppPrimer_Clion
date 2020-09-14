@@ -18,12 +18,24 @@
 #include <cctype>
 #include <functional>
 #include <utility>
+#include <cstring>
 
 #include "Sales_data.h"
 #include "Person.h"
 #include "Screen.h"
 #include "Window_mgr.h"
 #include "MyDate.h"
+#include "StrBlob.h"
+#include "Chapter12/TextQuery.h"
+#include "Chapter12/QueryResult.h"
+#include "Chapter13/HasPtrLikeValue.h"
+#include "Chapter13/HasPtrLikeClass.h"
+#include "Chapter13/Message.h"
+#include "Chapter13/Folder.h"
+#include "Chapter13/StrVec.h"
+#include "Chapter13/TextQuery13.h"
+#include "Chapter13/QueryResult13.h"
+#include "Chapter13/ZString.h"
 
 #define NDEBUG
 
@@ -34,15 +46,42 @@ struct PersonInfo {
     string name;
     vector<string> phones;
 };
+struct C {
+    C() { cout << "C()" << endl; }
+    C(const C &) {cout << "C(const C&)" << endl; }
+    C & operator=(C &) {
+        cout << "C = " << endl;
+        return *this;
+    }
+    ~C() {cout << "~C()" << endl; }
 
-static const string aTextForCpp = "../Data/aTextForCpp.txt";
-static const string SalesRecord = "../Data/SalesRecord.txt";
-static const string C10_33R = "../Data/C10_33R.txt";
-static const string C10_33WOdd = "../Data/C10_33WOdd.txt";
-static const string C10_33WEven = "../Data/C10_33WEven.txt";
-static const string textRepeated = "../Data/textRepeated.txt";
-static const string familyNames = "../Data/FamilyNames.txt";
-static const string familyNamesAndBirthday = "../Data/NameAndBirthday.txt";
+};
+class numbered {
+public:
+    numbered() {
+        static int unique = 10;
+        mysn = unique++;
+    };
+    numbered(const numbered& n) {
+        mysn = n.mysn + 1;
+    }
+public:
+    int mysn;
+};
+
+const string aTextForCpp = "../Data/aTextForCpp.txt";
+const string SalesRecord = "../Data/SalesRecord.txt";
+const string C10_33R = "../Data/C10_33R.txt";
+const string C10_33WOdd = "../Data/C10_33WOdd.txt";
+const string C10_33WEven = "../Data/C10_33WEven.txt";
+const string textRepeated = "../Data/textRepeated.txt";
+const string familyNames = "../Data/FamilyNames.txt";
+const string familyNamesAndBirthday = "../Data/NameAndBirthday.txt";
+const string WritersAndBooks = "../Data/WritersAndBooks.txt";
+const string WordTransfer_Rules = "../Data/WordTransfer_Rules.txt";
+const string WordTransfer_Result = "../Data/WordTransfer_Result.txt";
+const string WordTransfer_Input = "../Data/WordTransfer_Input.txt";
+const string ChapterOfNovel = "../Data/ChapterOfNovel.txt";
 
 vector<string> readATextFromFile() {
     vector<string> vec;
@@ -476,11 +515,120 @@ void addFamilyNameAndBirthday11_14() {
         continue;
     }
 }
-void deleteItemOnMap(multimap<string, string> &mm) {
-
+void deleteWriterOnMap(multimap<string, string> &mm, const string &s) {
+    auto res = mm.find(s);
+    if (res != mm.end()) {
+        mm.erase(res->first);
+    }
+}
+void deleteBookOnMap(multimap<string, string> &mm, const string &book) {
+    for (auto beg = mm.begin(); beg != mm.end(); ++beg) {
+        if (beg->second == book) {
+            beg = mm.erase(beg);
+        }
+    }
+}
+void deleteItemOnMap(multimap<string, string> &mm, const string &writer, const string &book) {
+    auto wp = mm.find(writer);
+    if (wp != mm.end()) {
+        for (auto beg = mm.lower_bound(wp->first), end = mm.upper_bound(wp->first); beg != end; ++beg) {
+            if (beg->second == book) {
+                beg = mm.erase(beg);
+            }
+        }
+    } else {
+        cerr << "No writer matches." << endl;
+    }
 }
 
-int chapter02() {
+const string &transformWord(const string &word, const map<string, string> &rules) {
+    auto res = rules.find(word);
+    if (res != rules.end()) {
+        return res->second;
+    } else {
+        return word;
+    }
+}
+map<string, string> buildRulesMap(ifstream &rules_file) {
+    map<string, string> rules;
+    string key;
+    string value;
+    while (rules_file >> key && getline(rules_file, value)) {
+        if (value.size() > 1)
+            rules[key] = value.substr(1);
+        else
+            throw runtime_error("no rule for " + key);
+    }
+
+    return rules;
+}
+void word_transform(ifstream &rules_file, ifstream &input, ofstream &output) {
+    auto trans_map = buildRulesMap(rules_file);
+    string text;
+    while (getline(input, text)) {
+        istringstream stream(text);
+        string word;
+        bool isFirstWord = true;
+        while (stream >> word) {
+            if (isFirstWord)
+                isFirstWord = false;
+            else {
+                cout << " ";
+                output << " ";
+            }
+            cout << transformWord(word, trans_map);
+            output << transformWord(word, trans_map);
+        }
+        cout << endl;
+        output << endl;
+    }
+}
+void readToVector12_06(vector<int> *vi) {
+    int i;
+    while (cin >> i) {
+        vi->push_back(i);
+    }
+}
+void printVector12_06(vector<int> *vi) {
+    for (const auto i: *vi) {
+        cout << i << " " << endl;
+    }
+}
+void readToVector12_07(shared_ptr<vector<int>> vi) {
+    int i;
+    while (cin >> i) {
+        vi->push_back(i);
+    }
+}
+void printVector12_07(shared_ptr<vector<int>> vi) {
+    for (const auto &i: *vi) {
+        cout << i << " ";
+    }
+}
+void process(shared_ptr<int> ptr) {
+    cout << "inside the procee function: " << ptr.use_count() << endl;
+}
+
+void runQueries(ifstream &infile) {
+    TextQuery tq(infile);
+    while (true) {
+        cout << "enter word to look for, or q to quit: ";
+        string s;
+        if (!(cin >> s) || s == "q") break;
+        print(cout, tq.query(s)) << endl;
+    }
+}
+C& testCRef(C &c) {
+    C *anotherC = new C(c);
+    return *anotherC;
+}
+C testCNoRef(C c) {
+    C *anotherC = new C(c);
+    return *anotherC;
+}
+void f (numbered s) { cout << s.mysn << endl;}
+
+void chapter02() {
 
     //E2.37
     int a = 3, b = 4;
@@ -545,14 +693,11 @@ int chapter02() {
     i = 5;
     ri = 10;
     cout << "i = " << i << ", ri = " << ri << endl;*/
-
-    return 0;
-
 }
-int chapter03() {
+void chapter03() {
 
     //E3.44
-    int ia[3][4] = {
+    /*int ia[3][4] = {
             {3, 5, 7, 9},
             {6, 8, 11, 4},
             {20, 30 ,40, 50}
@@ -563,7 +708,7 @@ int chapter03() {
             cout << *q << " ";
         }
         cout << endl;
-    }
+    }*/
 
 
 
@@ -869,9 +1014,8 @@ int chapter03() {
     /*string会将字符串前面的空白字符忽略掉, 直到真正有字符输入为止; 而且在遇到下一个空白的时候结束;
     getline不会忽略空白,只对换行符敏感. 在遇到换行符后结束输入*/
 
-    return 0;
 }
-int chapter04() {
+void chapter04() {
 
     //E4.36
 //    int i = 3;
@@ -954,9 +1098,9 @@ int chapter04() {
 //        }
 //    }
 }
-int chapter05() {
+void chapter05() {
     //E5.21
-    string word, preword;
+    /*string word, preword;
     while (cin >> word) {
         if (!isupper(word[0])) {
             preword = "";
@@ -970,7 +1114,7 @@ int chapter05() {
     }
 
     if (cin.eof())
-        cout << "No words repeat." << endl;
+        cout << "No words repeat." << endl;*/
 
 
     //E5.20
@@ -1064,9 +1208,9 @@ int chapter05() {
 //        cout << lettergrade << endl;
 //    }
 }
-int chapter06() {
+void chapter06() {
     //E6.54
-    int f1(int, int);
+    /*int f1(int, int);
     typedef int(*fp1)(int, int);
     using fp2 = int (*) (int, int);
     typedef decltype(f1) *fp3;
@@ -1076,7 +1220,7 @@ int chapter06() {
     int a = 120, b = 6;
     for (auto f : vfp) {
         cout << f(a, b) << endl;
-    }
+    }*/
 
 
 
@@ -1188,10 +1332,9 @@ int chapter06() {
 
 //    E6_04();
 
-    return 0;
 }
-int chapter07() {
-    class C;
+void chapter07() {
+   /* class C;
     //E7.43
     class NoDefault { ;
         friend C;
@@ -1203,7 +1346,7 @@ int chapter07() {
         C() : nd(0) { };
     private:
         NoDefault nd;
-    };
+    };*/
 
 
     //E7.41
@@ -1226,9 +1369,9 @@ int chapter07() {
 //    Sales_data s1("haha");
 //    Sales_data s2("good", 12, 2.5);
 };
-int chapter08() {
+void chapter08() {
     //E8.13
-    string line, word;
+    /*string line, word;
     vector<PersonInfo> persons;
     vector<string> lines;
     ifstream input("/Users/carl/Desktop/Temp/ForCpp/PersonInfo.txt");
@@ -1271,7 +1414,7 @@ int chapter08() {
                 << " invalid number(s) " << badNums.str() << endl;
         }
     }
-    os.close();
+    os.close();*/
 
 
 
@@ -1360,7 +1503,7 @@ int chapter08() {
 //    istream &is = E8_01(cin);
 //    cout << is.rdstate() << endl;
 }
-int chapter09() {
+void chapter09() {
     //E9.52
     auto& expr = "This is (Mooophy(awesome)((((wooooooooo))))) and (ocxs) over";
     auto repl = '#';
@@ -1703,9 +1846,8 @@ int chapter09() {
     //E9.2
 //    list<deque<int>> lqint;
 
-    return 0;
 }
-int chapter10() {
+void chapter10() {
     //E10.42
 //    list<string> li{"hello", "my", "name", "is", "jack", "fox", "hello", "jason", "fuck", "man", "you", "are", "my", "baby"};
 //    elimDupsByList(li);
@@ -1945,11 +2087,43 @@ int chapter10() {
     //E10.1
 //    vector<int> vi{1, 3, 5, 5, 12, 9, 44, 19, 23, 5, 988, 56, 56, 5, 44};
 //    cout << count(vi.begin(), vi.end(), 5) << endl;
-}
-int chapter11() {
-    //E11.31
-    multimap<string, string> mm;
 
+}
+void chapter11() {
+    //E11.33
+    /*ifstream rules(WordTransfer_Rules);
+    ifstream input(WordTransfer_Input);
+    ofstream output(WordTransfer_Result);
+    if (rules && input && output) {
+        word_transform(rules, input, output);
+    }*/
+
+    //E11.31
+    /*multimap<string, string> mm;
+    ifstream input(WritersAndBooks);
+    if (input) {
+        string record;
+        while (getline(input, record)) {
+            auto space = find_if(record.begin(), record.end(), ::isspace);
+            mm.insert(make_pair(string(record.begin(), space), string(++space, record.end())));
+        }
+    }
+    deleteWriterOnMap(mm, "LaoShe");
+    deleteBookOnMap(mm, "KRRJ");
+    deleteItemOnMap(mm, "WangShuo", "WDJSXT");
+    for (const auto &item: mm) {
+        cout << item.first << ": " << item.second << endl;
+    }*/
+    /*
+    LuXun: JNLHZJ
+    WangShuo: XPR
+    WangShuo: KSQHM
+    WangShuo: DWXM
+    WangXiaoBo: HeiTieShiDai
+    WangXiaoBo: HuangJinShiDai
+    WangXiaoBo: HongFuYeBen
+    WangXiaoBo: Jin
+     */
 
     //E11.28
     /*map<string, vector<int>> m;
@@ -2075,41 +2249,297 @@ int chapter11() {
         cout << "Failed to open file." << endl;
     }*/
 
+}
+void chapter12() {
+    //E12.30
+    /*ifstream input(ChapterOfNovel);
+    if (input) {
+        runQueries(input);
+    }*/
 
-    return 0;
+
+    //E12.27
+    /*ifstream input(ChapterOfNovel);
+    map<string, set<unsigned>> resMap;
+    vector<string> vLines;
+    if (input) {
+        string line;
+        unsigned lineNumber = 0;
+        while (getline(input, line)) {
+            vLines.push_back(line);
+            istringstream stream(line);
+            string word;
+            while (stream >> word) {
+                resMap[word].insert(lineNumber);
+            }
+            ++lineNumber;
+        }
+    }
+    string hint;
+    cout << "Enter a word you want to find: " << endl;
+    cin >> hint;
+    auto res = resMap.find(hint);
+    if (res != resMap.end()) {
+        cout << hint << " appears " << res->second.size() << " times: " << endl;
+        for (auto &l: res->second) {
+            cout << "(line " << l << "): " << vLines[l] << endl;
+        }
+    }*/
+
+    //E12.26
+    /*int n = 3;
+    string *const p = new string[n];
+    string s;
+    string *q = p;
+    while (cin >> s && q != p + n)
+        *q++ = s;
+    const size_t size = q - p;
+    cout << "size = " << size;
+    delete [] p;*/
+    /*allocator<string> alloc;
+    auto p = alloc.allocate(10);
+    string s;
+    unsigned count = 0;
+    while (cin >> s) {
+        alloc.construct(p++, s);
+        ++count;
+    }
+//    p = p - count;
+    for (; count != 0; --count)
+        cout << *--p << " ";
+    alloc.deallocate(p, 10);*/
+
+    //E12.24
+    /*string s;
+    typedef string strT[10];
+    string *arrS = new strT();
+    cin >> s;
+    *arrS = s;
+    cout << *arrS << endl;*/
+
+    //E12.23
+    /*const char c1[] = "Hello";
+    const char c2[] = "you";
+    unsigned len =strlen(c1) + strlen(c2) + 1;
+    char *r = new char[len]();
+    strncat(r, c1, len);
+    strncat(r, c2, len);
+    cout << r << endl;
+
+    string s1 = "Oh";
+    string s2 = "my god";
+    strncpy(r, (s1 + s2).c_str(), len);
+    cout << r << endl;
+
+    delete [] r;*/
+
+
+    //E12.20
+    /*StrBlob sb;
+    string s;
+    while (cin >> s) {
+        sb.push_back(s);
+    }
+    for (StrBlobPtr pbeg(sb.begin()), pend(sb.end()); pbeg != pend; pbeg.incr()) {
+        cout << pbeg.deref() << " ";
+    }*/
+
+    //E12.16
+    /*unique_ptr<int> u1(new int(23));
+    unique_ptr<int> u2(u1);
+//    u2 = u1;*/
+
+    //E12.13
+    /*{
+        auto sp = std::make_shared<int>();
+        auto p = sp.get();
+        delete p;
+    }*/
+
+    //E12.10
+    /*shared_ptr<int> p(new int(42));
+    process(shared_ptr<int>(p));
+
+    cout << p.use_count() << endl;
+    auto q = p;
+    cout << p.use_count() << endl;
+    cout << "the int p now points to is: " << *p << endl;*/
+
+    //E12.7
+    /*shared_ptr<vector<int>> svi = make_shared<vector<int>>();
+    readToVector12_07(svi);
+    printVector12_07(svi);*/
+
+    //E12.6
+    /*vector<int> *vi = new vector<int>();
+    readToVector12_06(vi);
+    printVector12_06(vi);
+    delete vi;*/
+
+    //E12.3
+    /*const StrBlob b1;
+    b1.push_back("Hello");*/
+
+    //E12.1
+    /*StrBlob b1;
+    {
+        StrBlob b2 = {"a", "an", "the"};
+        b1 = b2;
+        b2.push_back("about");
+        cout << "b1 size: " << b1.size() << endl;
+        cout << "b2 size: " << b2.size() << endl;
+    }*/
+}
+void chapter13() {
+    //E13.44
+    char text[] = "Hello";
+    ZString s0;
+    ZString s1("world");
+    ZString s2(s1);
+    ZString s3 = s1;
+    ZString s4(text);
+
+    vector<ZString> svec;
+    svec.push_back(s0);
+    svec.push_back(s1);
+    svec.push_back(s2);
+    svec.push_back(s3);
+    svec.push_back(s4);
+
+    for (const auto &s: svec) {
+        cout << s.c_str() << endl;
+    }
+
+    //E13.42
+    /*ifstream input(ChapterOfNovel);
+    if (input) {
+        TextQuery13 tq(input);
+        while (true) {
+            cout << "enter word to look for, or q to quit: ";
+            string s;
+            if (!(cin >> s) || s == "q") break;
+            print(cout, tq.query(s)) << endl;
+        }
+    }*/
+
+
+    //E13.34-37
+    /*Message m1("Hello");
+    Message m2("Welcome to China.");
+    Folder mailBox;
+
+    m1.print_debug();
+    m1.save(mailBox);
+    mailBox.print_debug();
+
+    m2.print_debug();
+    m2.save(mailBox);
+    mailBox.print_debug();
+
+    m1 = m1;
+    m1.print_debug();
+    mailBox.print_debug();*/
+
+    //E13.31
+    /*vector<HasPtrLikeValue> vc;
+    vc.push_back(HasPtrLikeValue("Hello"));
+    vc.push_back(HasPtrLikeValue("oh"));
+    vc.push_back(HasPtrLikeValue("my"));
+    vc.push_back(HasPtrLikeValue("god"));
+    sort(vc.begin(), vc.end());
+    for (auto &e: vc) {
+        cout << e.getName() << endl;
+    }*/
+
+    //E13.20
+    /*HasPtrLikeValue h1 = HasPtrLikeValue("hello");
+    HasPtrLikeValue h2 = HasPtrLikeValue("FUCK");
+    cout << h1.getName() << endl;
+    cout << h2.getName() << endl;
+    cout << "After swap: " << endl;
+    swap(h1, h2);
+    cout << h1.getName() << endl;
+    cout << h2.getName() << endl;*/
+
+    //E13.14
+    /*numbered a, b = a, c = b;
+    f(a); f(b); f(c);*/
+
+    //E13.13
+    /*C c = C();
+    C ac = C();
+    ac = c;
+    testCRef(c);
+    testCNoRef(c);*/
+
+    //E13.5
+    /*class HasPtr {
+    public:
+        HasPtr(const HasPtr & origin) : ps(new string(*origin.ps)), i(origin.i) {
+        }
+        HasPtr(const string &s = string()) :
+            ps(new string(s)), i(0) { };
+
+        HasPtr & operator=(HasPtr & hp) {
+            string *new_ps = new string(*hp.ps);
+            delete ps;
+            ps = new_ps;
+            i = hp.i;
+            return *this;
+        }
+
+        ~HasPtr() {delete ps;}
+    private:
+        string *ps;
+        int i;
+    };*/
 }
 void testAndVerify() {
+    //P409
+    /*int i, *pi1 = &i, *pi2 = nullptr;
+    double *pd = new double(23.0), *pd2 = pd;
+//    delete i;
+//    delete pi1;
+//    delete pd;*/
+
+
+    //For static variable
+//    cout << testForStatic << endl;
+
     //P389
     /*set<int> s = {12, 4, 5, 6, 9, 8, 99, 100, 100};
     auto it = s.lower_bound(7);
     cout << *it << endl;*/
 
-    //For
+    //For compiler version
 //    cout << __VERSION__ << endl;
 
     //P374
-//    map<string, size_t> word_count;
-//    string word;
-//    ifstream input(aTextForCpp);
-//    while (input >> word) {
-//        ++word_count[word];
-//    }
-//    for (const auto &w: word_count) {
-//        cout << w.first << " occurs " << w.second
-//            << ((w.second > 1) ? " times" : "time") << endl;
-//    }
+    /*map<string, size_t> word_count;
+    string word;
+    ifstream input(aTextForCpp);
+    while (input >> word) {
+        ++word_count[word];
+    }
+    for (const auto &w: word_count) {
+        cout << w.first << " occurs " << w.second
+            << ((w.second > 1) ? " times" : "time") << endl;
+    }*/
 
     //P364
-//    string line{"FIRST,MIDDLE,LAST"};
-//    auto rcomma = find(line.crbegin(), line.crend(), ',');
-//    cout << string(rcomma.base(), line.cend()) << endl;
+    /*string line{"FIRST,MIDDLE,LAST"};
+    auto rcomma = find(line.crbegin(), line.crend(), ',');
+    cout << string(rcomma.base(), line.cend()) << endl;*/
 }
 
 int main()
 {
     cout << "ForExercises--\n";
     testAndVerify();
-    chapter11();
+    chapter13();
+
+//    chapter11();
+
 //    chapter10();
 
 //    chapter09();

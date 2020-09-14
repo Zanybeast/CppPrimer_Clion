@@ -143,6 +143,357 @@ ForExercises/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/build
 .PHONY : ForExercises/fast
 
+Chapter12/QueryResult.o: Chapter12/QueryResult.cpp.o
+
+.PHONY : Chapter12/QueryResult.o
+
+# target to build an object file
+Chapter12/QueryResult.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.o
+.PHONY : Chapter12/QueryResult.cpp.o
+
+Chapter12/QueryResult.i: Chapter12/QueryResult.cpp.i
+
+.PHONY : Chapter12/QueryResult.i
+
+# target to preprocess a source file
+Chapter12/QueryResult.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.i
+.PHONY : Chapter12/QueryResult.cpp.i
+
+Chapter12/QueryResult.s: Chapter12/QueryResult.cpp.s
+
+.PHONY : Chapter12/QueryResult.s
+
+# target to generate assembly for a file
+Chapter12/QueryResult.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.s
+.PHONY : Chapter12/QueryResult.cpp.s
+
+Chapter12/TextQuery.o: Chapter12/TextQuery.cpp.o
+
+.PHONY : Chapter12/TextQuery.o
+
+# target to build an object file
+Chapter12/TextQuery.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.o
+.PHONY : Chapter12/TextQuery.cpp.o
+
+Chapter12/TextQuery.i: Chapter12/TextQuery.cpp.i
+
+.PHONY : Chapter12/TextQuery.i
+
+# target to preprocess a source file
+Chapter12/TextQuery.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.i
+.PHONY : Chapter12/TextQuery.cpp.i
+
+Chapter12/TextQuery.s: Chapter12/TextQuery.cpp.s
+
+.PHONY : Chapter12/TextQuery.s
+
+# target to generate assembly for a file
+Chapter12/TextQuery.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.s
+.PHONY : Chapter12/TextQuery.cpp.s
+
+Chapter13/BinStrTree.o: Chapter13/BinStrTree.cpp.o
+
+.PHONY : Chapter13/BinStrTree.o
+
+# target to build an object file
+Chapter13/BinStrTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.o
+.PHONY : Chapter13/BinStrTree.cpp.o
+
+Chapter13/BinStrTree.i: Chapter13/BinStrTree.cpp.i
+
+.PHONY : Chapter13/BinStrTree.i
+
+# target to preprocess a source file
+Chapter13/BinStrTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.i
+.PHONY : Chapter13/BinStrTree.cpp.i
+
+Chapter13/BinStrTree.s: Chapter13/BinStrTree.cpp.s
+
+.PHONY : Chapter13/BinStrTree.s
+
+# target to generate assembly for a file
+Chapter13/BinStrTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.s
+.PHONY : Chapter13/BinStrTree.cpp.s
+
+Chapter13/Folder.o: Chapter13/Folder.cpp.o
+
+.PHONY : Chapter13/Folder.o
+
+# target to build an object file
+Chapter13/Folder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.o
+.PHONY : Chapter13/Folder.cpp.o
+
+Chapter13/Folder.i: Chapter13/Folder.cpp.i
+
+.PHONY : Chapter13/Folder.i
+
+# target to preprocess a source file
+Chapter13/Folder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.i
+.PHONY : Chapter13/Folder.cpp.i
+
+Chapter13/Folder.s: Chapter13/Folder.cpp.s
+
+.PHONY : Chapter13/Folder.s
+
+# target to generate assembly for a file
+Chapter13/Folder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.s
+.PHONY : Chapter13/Folder.cpp.s
+
+Chapter13/HasPtrLikeClass.o: Chapter13/HasPtrLikeClass.cpp.o
+
+.PHONY : Chapter13/HasPtrLikeClass.o
+
+# target to build an object file
+Chapter13/HasPtrLikeClass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.o
+.PHONY : Chapter13/HasPtrLikeClass.cpp.o
+
+Chapter13/HasPtrLikeClass.i: Chapter13/HasPtrLikeClass.cpp.i
+
+.PHONY : Chapter13/HasPtrLikeClass.i
+
+# target to preprocess a source file
+Chapter13/HasPtrLikeClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.i
+.PHONY : Chapter13/HasPtrLikeClass.cpp.i
+
+Chapter13/HasPtrLikeClass.s: Chapter13/HasPtrLikeClass.cpp.s
+
+.PHONY : Chapter13/HasPtrLikeClass.s
+
+# target to generate assembly for a file
+Chapter13/HasPtrLikeClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.s
+.PHONY : Chapter13/HasPtrLikeClass.cpp.s
+
+Chapter13/HasPtrLikeValue.o: Chapter13/HasPtrLikeValue.cpp.o
+
+.PHONY : Chapter13/HasPtrLikeValue.o
+
+# target to build an object file
+Chapter13/HasPtrLikeValue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.o
+.PHONY : Chapter13/HasPtrLikeValue.cpp.o
+
+Chapter13/HasPtrLikeValue.i: Chapter13/HasPtrLikeValue.cpp.i
+
+.PHONY : Chapter13/HasPtrLikeValue.i
+
+# target to preprocess a source file
+Chapter13/HasPtrLikeValue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.i
+.PHONY : Chapter13/HasPtrLikeValue.cpp.i
+
+Chapter13/HasPtrLikeValue.s: Chapter13/HasPtrLikeValue.cpp.s
+
+.PHONY : Chapter13/HasPtrLikeValue.s
+
+# target to generate assembly for a file
+Chapter13/HasPtrLikeValue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.s
+.PHONY : Chapter13/HasPtrLikeValue.cpp.s
+
+Chapter13/Message.o: Chapter13/Message.cpp.o
+
+.PHONY : Chapter13/Message.o
+
+# target to build an object file
+Chapter13/Message.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.o
+.PHONY : Chapter13/Message.cpp.o
+
+Chapter13/Message.i: Chapter13/Message.cpp.i
+
+.PHONY : Chapter13/Message.i
+
+# target to preprocess a source file
+Chapter13/Message.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.i
+.PHONY : Chapter13/Message.cpp.i
+
+Chapter13/Message.s: Chapter13/Message.cpp.s
+
+.PHONY : Chapter13/Message.s
+
+# target to generate assembly for a file
+Chapter13/Message.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.s
+.PHONY : Chapter13/Message.cpp.s
+
+Chapter13/QueryResult13.o: Chapter13/QueryResult13.cpp.o
+
+.PHONY : Chapter13/QueryResult13.o
+
+# target to build an object file
+Chapter13/QueryResult13.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.o
+.PHONY : Chapter13/QueryResult13.cpp.o
+
+Chapter13/QueryResult13.i: Chapter13/QueryResult13.cpp.i
+
+.PHONY : Chapter13/QueryResult13.i
+
+# target to preprocess a source file
+Chapter13/QueryResult13.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.i
+.PHONY : Chapter13/QueryResult13.cpp.i
+
+Chapter13/QueryResult13.s: Chapter13/QueryResult13.cpp.s
+
+.PHONY : Chapter13/QueryResult13.s
+
+# target to generate assembly for a file
+Chapter13/QueryResult13.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.s
+.PHONY : Chapter13/QueryResult13.cpp.s
+
+Chapter13/StrVec.o: Chapter13/StrVec.cpp.o
+
+.PHONY : Chapter13/StrVec.o
+
+# target to build an object file
+Chapter13/StrVec.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.o
+.PHONY : Chapter13/StrVec.cpp.o
+
+Chapter13/StrVec.i: Chapter13/StrVec.cpp.i
+
+.PHONY : Chapter13/StrVec.i
+
+# target to preprocess a source file
+Chapter13/StrVec.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.i
+.PHONY : Chapter13/StrVec.cpp.i
+
+Chapter13/StrVec.s: Chapter13/StrVec.cpp.s
+
+.PHONY : Chapter13/StrVec.s
+
+# target to generate assembly for a file
+Chapter13/StrVec.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.s
+.PHONY : Chapter13/StrVec.cpp.s
+
+Chapter13/TextQuery13.o: Chapter13/TextQuery13.cpp.o
+
+.PHONY : Chapter13/TextQuery13.o
+
+# target to build an object file
+Chapter13/TextQuery13.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.o
+.PHONY : Chapter13/TextQuery13.cpp.o
+
+Chapter13/TextQuery13.i: Chapter13/TextQuery13.cpp.i
+
+.PHONY : Chapter13/TextQuery13.i
+
+# target to preprocess a source file
+Chapter13/TextQuery13.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.i
+.PHONY : Chapter13/TextQuery13.cpp.i
+
+Chapter13/TextQuery13.s: Chapter13/TextQuery13.cpp.s
+
+.PHONY : Chapter13/TextQuery13.s
+
+# target to generate assembly for a file
+Chapter13/TextQuery13.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.s
+.PHONY : Chapter13/TextQuery13.cpp.s
+
+Chapter13/TreeNode.o: Chapter13/TreeNode.cpp.o
+
+.PHONY : Chapter13/TreeNode.o
+
+# target to build an object file
+Chapter13/TreeNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.o
+.PHONY : Chapter13/TreeNode.cpp.o
+
+Chapter13/TreeNode.i: Chapter13/TreeNode.cpp.i
+
+.PHONY : Chapter13/TreeNode.i
+
+# target to preprocess a source file
+Chapter13/TreeNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.i
+.PHONY : Chapter13/TreeNode.cpp.i
+
+Chapter13/TreeNode.s: Chapter13/TreeNode.cpp.s
+
+.PHONY : Chapter13/TreeNode.s
+
+# target to generate assembly for a file
+Chapter13/TreeNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.s
+.PHONY : Chapter13/TreeNode.cpp.s
+
+Chapter13/ZString.o: Chapter13/ZString.cpp.o
+
+.PHONY : Chapter13/ZString.o
+
+# target to build an object file
+Chapter13/ZString.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o
+.PHONY : Chapter13/ZString.cpp.o
+
+Chapter13/ZString.i: Chapter13/ZString.cpp.i
+
+.PHONY : Chapter13/ZString.i
+
+# target to preprocess a source file
+Chapter13/ZString.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.i
+.PHONY : Chapter13/ZString.cpp.i
+
+Chapter13/ZString.s: Chapter13/ZString.cpp.s
+
+.PHONY : Chapter13/ZString.s
+
+# target to generate assembly for a file
+Chapter13/ZString.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.s
+.PHONY : Chapter13/ZString.cpp.s
+
+Employee.o: Employee.cpp.o
+
+.PHONY : Employee.o
+
+# target to build an object file
+Employee.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Employee.cpp.o
+.PHONY : Employee.cpp.o
+
+Employee.i: Employee.cpp.i
+
+.PHONY : Employee.i
+
+# target to preprocess a source file
+Employee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Employee.cpp.i
+.PHONY : Employee.cpp.i
+
+Employee.s: Employee.cpp.s
+
+.PHONY : Employee.s
+
+# target to generate assembly for a file
+Employee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Employee.cpp.s
+.PHONY : Employee.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +530,45 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ForExercises"
+	@echo "... Chapter12/QueryResult.o"
+	@echo "... Chapter12/QueryResult.i"
+	@echo "... Chapter12/QueryResult.s"
+	@echo "... Chapter12/TextQuery.o"
+	@echo "... Chapter12/TextQuery.i"
+	@echo "... Chapter12/TextQuery.s"
+	@echo "... Chapter13/BinStrTree.o"
+	@echo "... Chapter13/BinStrTree.i"
+	@echo "... Chapter13/BinStrTree.s"
+	@echo "... Chapter13/Folder.o"
+	@echo "... Chapter13/Folder.i"
+	@echo "... Chapter13/Folder.s"
+	@echo "... Chapter13/HasPtrLikeClass.o"
+	@echo "... Chapter13/HasPtrLikeClass.i"
+	@echo "... Chapter13/HasPtrLikeClass.s"
+	@echo "... Chapter13/HasPtrLikeValue.o"
+	@echo "... Chapter13/HasPtrLikeValue.i"
+	@echo "... Chapter13/HasPtrLikeValue.s"
+	@echo "... Chapter13/Message.o"
+	@echo "... Chapter13/Message.i"
+	@echo "... Chapter13/Message.s"
+	@echo "... Chapter13/QueryResult13.o"
+	@echo "... Chapter13/QueryResult13.i"
+	@echo "... Chapter13/QueryResult13.s"
+	@echo "... Chapter13/StrVec.o"
+	@echo "... Chapter13/StrVec.i"
+	@echo "... Chapter13/StrVec.s"
+	@echo "... Chapter13/TextQuery13.o"
+	@echo "... Chapter13/TextQuery13.i"
+	@echo "... Chapter13/TextQuery13.s"
+	@echo "... Chapter13/TreeNode.o"
+	@echo "... Chapter13/TreeNode.i"
+	@echo "... Chapter13/TreeNode.s"
+	@echo "... Chapter13/ZString.o"
+	@echo "... Chapter13/ZString.i"
+	@echo "... Chapter13/ZString.s"
+	@echo "... Employee.o"
+	@echo "... Employee.i"
+	@echo "... Employee.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

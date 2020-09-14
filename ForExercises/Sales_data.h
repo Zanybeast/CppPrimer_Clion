@@ -11,6 +11,8 @@
 
 using namespace std;
 
+const string testForStatic = "This is a lie!!!!!!!";
+
 class Sales_data;
 //与类有关的函数接口的声明，尚未实现
 Sales_data add (const Sales_data& lhs, const Sales_data& rhs);

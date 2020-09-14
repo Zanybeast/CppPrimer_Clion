@@ -4,6 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/QueryResult.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.o"
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/TextQuery.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.o"
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/BinStrTree.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.o"
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.o"
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeClass.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.o"
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeValue.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.o"
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Message.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.o"
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/QueryResult13.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.o"
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/StrVec.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.o"
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TextQuery13.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.o"
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TreeNode.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.o"
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o"
+  "/Users/carl/Desktop/01Project/Cpp/ForExercises/Employee.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Employee.cpp.o"
   "/Users/carl/Desktop/01Project/Cpp/ForExercises/main.cpp" "/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

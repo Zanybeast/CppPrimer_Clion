@@ -90,17 +90,212 @@ CMakeFiles/ForExercises.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/main.cpp -o CMakeFiles/ForExercises.dir/main.cpp.s
 
+CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.o: ../Chapter12/TextQuery.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/TextQuery.cpp
+
+CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/TextQuery.cpp > CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.i
+
+CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/TextQuery.cpp -o CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.s
+
+CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.o: ../Chapter12/QueryResult.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/QueryResult.cpp
+
+CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/QueryResult.cpp > CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.i
+
+CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/QueryResult.cpp -o CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.s
+
+CMakeFiles/ForExercises.dir/Employee.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Employee.cpp.o: ../Employee.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ForExercises.dir/Employee.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Employee.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Employee.cpp
+
+CMakeFiles/ForExercises.dir/Employee.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Employee.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Employee.cpp > CMakeFiles/ForExercises.dir/Employee.cpp.i
+
+CMakeFiles/ForExercises.dir/Employee.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Employee.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Employee.cpp -o CMakeFiles/ForExercises.dir/Employee.cpp.s
+
+CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.o: ../Chapter13/HasPtrLikeValue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeValue.cpp
+
+CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeValue.cpp > CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.i
+
+CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeValue.cpp -o CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.s
+
+CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.o: ../Chapter13/HasPtrLikeClass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeClass.cpp
+
+CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeClass.cpp > CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.i
+
+CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeClass.cpp -o CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.s
+
+CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.o: ../Chapter13/TreeNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TreeNode.cpp
+
+CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TreeNode.cpp > CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.i
+
+CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TreeNode.cpp -o CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.s
+
+CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.o: ../Chapter13/BinStrTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/BinStrTree.cpp
+
+CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/BinStrTree.cpp > CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.i
+
+CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/BinStrTree.cpp -o CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.s
+
+CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.o: ../Chapter13/Message.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Message.cpp
+
+CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Message.cpp > CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.i
+
+CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Message.cpp -o CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.s
+
+CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.o: ../Chapter13/Folder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.cpp
+
+CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.cpp > CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.i
+
+CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.cpp -o CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.s
+
+CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.o: ../Chapter13/StrVec.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/StrVec.cpp
+
+CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/StrVec.cpp > CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.i
+
+CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/StrVec.cpp -o CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.s
+
+CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.o: ../Chapter13/TextQuery13.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TextQuery13.cpp
+
+CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TextQuery13.cpp > CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.i
+
+CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TextQuery13.cpp -o CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.s
+
+CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.o: ../Chapter13/QueryResult13.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/QueryResult13.cpp
+
+CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/QueryResult13.cpp > CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.i
+
+CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/QueryResult13.cpp -o CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.s
+
+CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o: CMakeFiles/ForExercises.dir/flags.make
+CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o: ../Chapter13/ZString.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o -c /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.cpp
+
+CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.cpp > CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.i
+
+CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.cpp -o CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.s
+
 # Object files for target ForExercises
 ForExercises_OBJECTS = \
-"CMakeFiles/ForExercises.dir/main.cpp.o"
+"CMakeFiles/ForExercises.dir/main.cpp.o" \
+"CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.o" \
+"CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.o" \
+"CMakeFiles/ForExercises.dir/Employee.cpp.o" \
+"CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.o" \
+"CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.o" \
+"CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.o" \
+"CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.o" \
+"CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.o" \
+"CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.o" \
+"CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.o" \
+"CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.o" \
+"CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.o" \
+"CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o"
 
 # External object files for target ForExercises
 ForExercises_EXTERNAL_OBJECTS =
 
 ForExercises: CMakeFiles/ForExercises.dir/main.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Chapter12/QueryResult.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Employee.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Chapter13/BinStrTree.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Chapter13/Message.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.o
+ForExercises: CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o
 ForExercises: CMakeFiles/ForExercises.dir/build.make
 ForExercises: CMakeFiles/ForExercises.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ForExercises"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable ForExercises"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ForExercises.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

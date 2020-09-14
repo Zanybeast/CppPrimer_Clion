@@ -94,12 +94,12 @@ clean: CMakeFiles/ForExercises.dir/clean
 CMakeFiles/ForExercises.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ForExercises"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target ForExercises"
 .PHONY : CMakeFiles/ForExercises.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ForExercises.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ForExercises.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ForExercises.dir/rule

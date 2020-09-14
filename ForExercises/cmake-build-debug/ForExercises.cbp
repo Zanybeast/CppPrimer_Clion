@@ -80,7 +80,85 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/QueryResult.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/QueryResult.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/TextQuery.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/TextQuery.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/BinStrTree.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/BinStrTree.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeClass.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeClass.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeValue.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeValue.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Message.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Message.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/QueryResult13.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/QueryResult13.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/StrVec.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/StrVec.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TextQuery13.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TextQuery13.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TreeNode.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TreeNode.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.h">
+			<Option target="ForExercises"/>
+		</Unit>
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/DEBUG.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Employee.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Employee.h">
 			<Option target="ForExercises"/>
 		</Unit>
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/MyDate.h">
@@ -95,13 +173,10 @@
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Screen.h">
 			<Option target="ForExercises"/>
 		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/StrBlob.h">
+			<Option target="ForExercises"/>
+		</Unit>
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Window_mgr.h">
-			<Option target="ForExercises"/>
-		</Unit>
-		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/X.h">
-			<Option target="ForExercises"/>
-		</Unit>
-		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Y.h">
 			<Option target="ForExercises"/>
 		</Unit>
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/main.cpp">

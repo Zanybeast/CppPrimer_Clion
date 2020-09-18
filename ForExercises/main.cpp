@@ -36,6 +36,16 @@
 #include "Chapter13/TextQuery13.h"
 #include "Chapter13/QueryResult13.h"
 #include "Chapter13/ZString.h"
+#include "Chapter13/Foo.h"
+#include "Chapter14/BoundStrCheck.h"
+#include "Chapter14/CompareStringLengthWithSize.h"
+#include "Chapter14/CompareTwoStrLength.h"
+#include "Chapter15/Quote.h"
+#include "Chapter15/Bulk_Quote.h"
+#include "Chapter15/Limit_Quote.h"
+#include "Chapter15/Disc_Quote.h"
+#include "Chapter15/Bulk_QuoteE15_26.h"
+#include "Chapter15/Section9/Basket.h"
 
 #define NDEBUG
 
@@ -67,6 +77,11 @@ public:
     }
 public:
     int mysn;
+};
+struct absInt {
+    int operator()(int val) const {
+        return val > 0? val : -val;
+    }
 };
 
 const string aTextForCpp = "../Data/aTextForCpp.txt";
@@ -627,6 +642,33 @@ C testCNoRef(C c) {
     return *anotherC;
 }
 void f (numbered s) { cout << s.mysn << endl;}
+
+void biggies14_40(vector<string> &words, vector<string>::size_type sz) {
+    CompareTwoStrLength ctsl;
+    CompareStringLengthWithSize cs(sz);
+    elimDups(words);
+    stable_sort(words.begin(), words.end(), ctsl);
+    auto wc = find_if(words.begin(), words.end(), cs);
+
+    auto count = words.end() - wc;
+    cout << count << " " << make_plural(count, "word", "s")
+         << " of length " << sz << "or longer" << endl;
+    for_each(wc, words.end(), [](const string &s) {cout << s << " ";});
+    cout << endl;
+}
+double print_total(std::ostream &os, const Quote &item, size_t n) {
+    double ret = item.net_price(n);
+    os << "ISBN: " << item.isbn() << " # sold: " << n << " total due: "<< ret << std::endl;
+    return ret;
+}
+
+//ForChapter14
+int zadd(int i, int j) {
+    return i + j;
+}
+struct ZDivide {
+    int operator()(int d, int n) { return d / n; }
+};
 
 void chapter02() {
 
@@ -2391,8 +2433,14 @@ void chapter12() {
     }*/
 }
 void chapter13() {
+
+    //E13.58
+    /*Foo().sorted();
+    Foo f;
+    f.sorted();*/
+
     //E13.44
-    char text[] = "Hello";
+    /*char text[] = "Hello";
     ZString s0;
     ZString s1("world");
     ZString s2(s1);
@@ -2408,7 +2456,7 @@ void chapter13() {
 
     for (const auto &s: svec) {
         cout << s.c_str() << endl;
-    }
+    }*/
 
     //E13.42
     /*ifstream input(ChapterOfNovel);
@@ -2494,7 +2542,236 @@ void chapter13() {
         int i;
     };*/
 }
+void chapter14() {
+    //E14.44
+    /*auto mod = [](int i, int j) { return i % j; };
+    map<string, function<int(int, int)>> binops = {
+            {"+", zadd},
+            {"-", minus<int>()},
+            {"/", ZDivide()},
+            {"*", [](int i, int j) {return i * j;}},
+            {"%", mod}
+    };
+    vector<string> vs = {"+", "-", "*", "/", "%"};
+    for (auto &s: vs)
+        cout << "12 " << s << " 4 = " << binops[s](12, 4) << endl;*/
+
+
+    //E14.43
+    /*vector<int> vi = {2, 4, 6, 9, 10, 12};
+
+    bool res = any_of(vi.begin(), vi.end(), bind(modulus<int>(), _1, 2));
+    cout << (res ? "True" : "False") << endl;*/
+
+    //E14.42
+    /*vector<string> vs = readATextFromFile();
+    vector<int> vi = {1344, 4, 3, 4233, 8, 18, 238, 889, 9428, 7};
+    int count = count_if(vi.begin(), vi.end(), bind(greater<int>(), _1, 1024));
+    auto p = find_if(vs.begin(), vs.end(), bind(not_equal_to<string>(), _1, "C++"));
+    transform(vi.begin(), vi.end(), vi.begin(), bind(multiplies<int>(), _1, 2));
+    cout << "count = " << count << endl;
+    cout << *p << endl;
+    for (auto i: vi) cout << i << " ";*/
+
+    //E14.41
+    /*vector<string> vs = readATextFromFile();
+    biggies(vs, 10);
+    biggies14_40(vs, 10);*/
+
+    //E14.38
+    /*vector<string> vs;
+    vs = readATextFromFile();
+    BoundStrCheck bsc(1, 5);
+    BoundStrCheck bsc2(1, 10);
+    for (int i = 0; i != 10; ++i) {
+        int count = 0;
+        for (auto &s: vs) {
+            if (s.length() == i + 1)
+                ++count;
+        }
+        cout << "length of word: " << i + 1 << "\tthe count is " << count << endl;
+    }
+    int num = 0;
+    for (auto &s: vs) {
+        if (bsc(s))
+            ++num;
+    }
+    cout << "range from 1 to 5 of string length has: " << num << endl;
+    num = 0;
+    for (auto &s: vs) {
+        if (bsc2(s))
+            ++num;
+    }
+    cout << "range from 1 to 10 of string length has: " << num << endl;*/
+
+    //E14.37
+    /*class IsEqual {
+    public:
+        IsEqual(int a) : value(a) {}
+        bool operator()(int element) { return value == element; }
+    private:
+        int value;
+    };
+
+    vector<int> vi = {1,2,3,4,5,6};
+    replace_if(vi.begin(), vi.end(), IsEqual(3), 333);
+    for (auto i: vi) cout << i << " ";*/
+
+    //E14.35
+    /*class GetInput {
+    public:
+        GetInput(istream &is = cin) : input(is) { }
+        string operator()() const {
+            string str;
+            getline(input, str);
+            return input ? str : string();
+        }
+    private:
+        istream &input;
+    };
+
+    GetInput g(cin);
+    cout << g() << endl;*/
+
+    //E14.34
+    /*struct Test {
+        int operator()(bool condition, int b, int c) {
+            return condition ? b : c;
+        }
+    };
+    Test t;
+    cout << t(false, 4, 6) << endl;*/
+
+    //E14.27
+    /*StrBlob sb1{"a", "b", "c"};
+    StrBlob sb2 = sb1;
+
+    sb2[2] = "b";
+
+    if (sb1 > sb2) {
+        for (StrBlobPtr iter = sb1.begin(); iter < sb1.end(); ++iter)
+            std::cout << iter.deref() << " ";
+        std::cout << std::endl;
+    }*/
+
+    //E14.23
+    /*StrVec sv({"hello", "my", "baby", "hehe"});
+    for (size_t i = 0; i < sv.size(); ++i)
+        cout << sv.at(i) << " ";*/
+
+    //E14.22
+    /*Sales_data s = string("hello");
+    cout << s << endl;*/
+
+
+    //E14.16
+    /*StrBlob blob({"hello"});
+    StrBlob blob2({"hello"});
+    if (blob == blob2)
+        cout << "StrBlob equals" << endl;
+    else
+        cout << "StrBlob not equal" << endl;*/
+    /*
+    ZString s1 = ("hello");
+    ZString s2 = ("hello");
+    if (s1 == s2)
+        cout << "==" << endl;
+    else
+        cout << "!= " << endl;*/
+
+    //E14.7
+    /*ZString s("hello");
+    cout << s << endl;*/
+
+    //E14.2
+    /*Sales_data s1("hello", 13, 13.5);
+    Sales_data s2("hello", 15, 14.3);
+    Sales_data sum;
+    sum = s1 + s2;
+    cout << sum << endl;
+    cout << (s1 += s2) << endl;
+    Sales_data temp;
+    cin >> temp;
+    cout << temp << endl;*/
+}
+void chapter15() {
+    //E15.30
+    Basket basket;
+    Quote q1("hello", 15);
+//    Quote q2("hi", 20);
+    Bulk_Quote bq1("good", 13, 23, 0.5);
+    Bulk_Quote bq2("bad", 20, 15, 0.8);
+    basket.add_item(q1);
+//    basket.add_item(q2);
+    basket.add_item(bq1);
+    basket.add_item(bq2);
+    basket.total_receipt(cout);
+
+    //E15.29
+    /*vector<Quote> basket;
+    basket.push_back(Bulk_Quote("hello", 15, 20, 0.4));
+    basket.push_back(Bulk_Quote("hi", 13, 23, 0.5));
+    basket.push_back(Bulk_Quote("oh", 20, 15, 0.8));
+    double total = 0.0;
+    for (auto e: basket) {
+        double price = e.net_price(25);
+        cout << "each price: " << price << endl;
+        total += price;
+    }
+    cout << "total price: " << total << endl;*/
+
+
+    //E15.28
+    /*vector<shared_ptr<Quote>> basket;
+    basket.push_back(make_shared<Quote>("hello", 15));
+    basket.push_back(make_shared<Bulk_Quote>("hi", 13, 23, 0.5));
+    basket.push_back(make_shared<Bulk_Quote>("oh", 20, 15, 0.8));
+    double total = 0.0;
+    for (auto e: basket) {
+        double price = e->net_price(25);
+//        e->debug();
+        cout << "each price: " << price << endl;
+        total += price;
+    }
+    cout << "total price: " << total << endl;*/
+
+    //E15.26
+    /*Quote q1("hello", 13);
+    Bulk_QuoteE15_26 bq1("oh", 12.5, 20, 0.2);
+    Quote *qPtr1 = &q1;
+    Bulk_QuoteE15_26 *bqPtr1 = &bq1;
+    Quote q2(q1);
+    Bulk_QuoteE15_26 bq2(bq1);
+    Bulk_QuoteE15_26 bq3(std::move(bq1));*/
+
+    //E15.17
+    /*Disc_Quote dq;*/
+
+    //E15.11
+    /*Quote quote;
+    Bulk_Quote bulkQuote;
+    Limit_Quote limitQuote;
+    cout << "quote debug: " << endl;
+    quote.debug();
+    cout << "bulkQuote debug: " << endl;
+    bulkQuote.debug();
+    cout << "limitQuote debug: " << endl;
+    limitQuote.debug();*/
+
+
+    //E15.6
+    /*Quote quote("hello", 13);
+    double total = print_total(cout, quote, 10);
+    Bulk_Quote bulkQuote("bbs", 12, 20, 0.8);
+    total = print_total(cout, bulkQuote, 30);*/
+}
 void testAndVerify() {
+    //P506
+    /*int i = -42;
+    absInt absObj;
+    int ui = absObj(i);
+    cout << ui << endl;*/
+
     //P409
     /*int i, *pi1 = &i, *pi2 = nullptr;
     double *pd = new double(23.0), *pd2 = pd;
@@ -2536,7 +2813,11 @@ int main()
 {
     cout << "ForExercises--\n";
     testAndVerify();
-    chapter13();
+    chapter15();
+
+//    chapter14();
+
+//    chapter13();
 
 //    chapter11();
 

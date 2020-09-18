@@ -14,6 +14,12 @@
 #include <initializer_list>
 
 class StrVec {
+    friend bool operator==(const StrVec&, const StrVec&);
+    friend bool operator!=(const StrVec&, const StrVec&);
+    friend bool operator<(const StrVec&, const StrVec&);
+    friend bool operator>(const StrVec&, const StrVec&);
+    friend bool operator<=(const StrVec&, const StrVec&);
+    friend bool operator>=(const StrVec&, const StrVec&);
 public:
     StrVec() : elements(nullptr), first_free(nullptr), cap(nullptr) {}
     StrVec(const StrVec&);
@@ -21,6 +27,7 @@ public:
     StrVec(std::initializer_list<std::string> il);
     StrVec &operator=(const StrVec&);
     StrVec &operator=(StrVec&& s) noexcept;
+    StrVec &operator=(std::initializer_list<std::string> il);
     ~StrVec();
 
     void push_back(const std::string &);
@@ -31,6 +38,8 @@ public:
 
     std::string &at(size_t pos) { return *(elements + pos); }
     const std::string &at(size_t pos) const { return *(elements + pos); }
+    std::string &operator[](size_t n);
+    const std::string &operator[](size_t n) const;
 
     void reserve(size_t i);
     void resize(size_t count);

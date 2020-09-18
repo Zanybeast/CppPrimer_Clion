@@ -18,6 +18,12 @@ vector
 set
 -
 
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/TextQuery.cpp
+sstream
+-
+TextQuery.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/TextQuery.h
+
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/TextQuery.h
 iostream
 -
@@ -34,17 +40,19 @@ map
 QueryResult.h
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/QueryResult.h
 
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.cpp
-Folder.h
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.h
-iostream
--
-
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.h
 set
 -
 Message.h
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Message.h
+
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Foo.h
+vector
+-
+iostream
+-
+algorithm
+-
 
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeClass.h
 string
@@ -56,25 +64,11 @@ string
 iostream
 -
 
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Message.cpp
-iostream
--
-Message.h
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Message.h
-Folder.h
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.h
-
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Message.h
 string
 -
 set
 -
-
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/QueryResult13.cpp
-QueryResult13.h
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/QueryResult13.h
-StrVec.h
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/StrVec.h
 
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/QueryResult13.h
 string
@@ -88,12 +82,6 @@ vector
 set
 -
 
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/StrVec.cpp
-utility
--
-StrVec.h
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/StrVec.h
-
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/StrVec.h
 memory
 -
@@ -107,14 +95,6 @@ string
 -
 initializer_list
 -
-
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TextQuery13.cpp
-sstream
--
-TextQuery13.h
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TextQuery13.h
-StrVec.h
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/StrVec.h
 
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TextQuery13.h
 iostream
@@ -132,16 +112,52 @@ map
 QueryResult13.h
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/QueryResult13.h
 
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.cpp
-ZString.h
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.h
-algorithm
+memory
 -
 iostream
 -
 
-/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.h
-memory
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/BoundStrCheck.h
+string
+-
+
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareStringLengthWithSize.h
+string
+-
+
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareTwoStrLength.h
+string
+-
+
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_Quote.h
+Quote.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+Disc_Quote.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Disc_Quote.h
+
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_QuoteE15_26.h
+Quote.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Disc_Quote.h
+Quote.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Limit_Quote.h
+Bulk_Quote.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_Quote.h
+
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+string
+-
+iostream
+-
+
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Section9/Basket.h
+../Quote.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+set
 -
 
 /Users/carl/Desktop/01Project/Cpp/ForExercises/MyDate.h
@@ -265,4 +281,24 @@ Chapter13/QueryResult13.h
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/QueryResult13.h
 Chapter13/ZString.h
 /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.h
+Chapter13/Foo.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Foo.h
+Chapter14/BoundStrCheck.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/BoundStrCheck.h
+Chapter14/CompareStringLengthWithSize.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareStringLengthWithSize.h
+Chapter14/CompareTwoStrLength.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareTwoStrLength.h
+Chapter15/Quote.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+Chapter15/Bulk_Quote.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_Quote.h
+Chapter15/Limit_Quote.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Limit_Quote.h
+Chapter15/Disc_Quote.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Disc_Quote.h
+Chapter15/Bulk_QuoteE15_26.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_QuoteE15_26.h
+Chapter15/Section9/Basket.h
+/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Section9/Basket.h
 

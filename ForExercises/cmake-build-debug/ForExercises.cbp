@@ -104,6 +104,12 @@
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.h">
 			<Option target="ForExercises"/>
 		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Foo.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Foo.h">
+			<Option target="ForExercises"/>
+		</Unit>
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeClass.cpp">
 			<Option target="ForExercises"/>
 		</Unit>
@@ -152,6 +158,66 @@
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.h">
 			<Option target="ForExercises"/>
 		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/BoundStrCheck.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/BoundStrCheck.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareStringLengthWithSize.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareStringLengthWithSize.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareTwoStrLength.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareTwoStrLength.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_Quote.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_Quote.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_QuoteE15_26.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_QuoteE15_26.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_QuoteE15_27.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_QuoteE15_27.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Disc_Quote.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Disc_Quote.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Limit_Quote.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Limit_Quote.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Section9/Basket.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Section9/Basket.h">
+			<Option target="ForExercises"/>
+		</Unit>
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/DEBUG.h">
 			<Option target="ForExercises"/>
 		</Unit>
@@ -167,10 +233,16 @@
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Person.h">
 			<Option target="ForExercises"/>
 		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Sales_data.cpp">
+			<Option target="ForExercises"/>
+		</Unit>
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Sales_data.h">
 			<Option target="ForExercises"/>
 		</Unit>
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/Screen.h">
+			<Option target="ForExercises"/>
+		</Unit>
+		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/StrBlob.cpp">
 			<Option target="ForExercises"/>
 		</Unit>
 		<Unit filename="/Users/carl/Desktop/01Project/Cpp/ForExercises/StrBlob.h">

@@ -22,4 +22,6 @@ add_executable(ForExercises main.cpp
         Chapter13/Folder.cpp Chapter13/Folder.h
         Chapter13/StrVec.cpp Chapter13/StrVec.h
         Chapter13/TextQuery13.cpp Chapter13/TextQuery13.h
-        Chapter13/QueryResult13.cpp Chapter13/QueryResult13.h Chapter13/ZString.cpp Chapter13/ZString.h)
+        Chapter13/QueryResult13.cpp Chapter13/QueryResult13.h
+        Chapter13/ZString.cpp Chapter13/ZString.h
+        Chapter13/Foo.cpp Chapter13/Foo.h Sales_data.cpp StrBlob.cpp Chapter14/BoundStrCheck.cpp Chapter14/BoundStrCheck.h Chapter14/CompareTwoStrLength.cpp Chapter14/CompareTwoStrLength.h Chapter14/CompareStringLengthWithSize.cpp Chapter14/CompareStringLengthWithSize.h Chapter15/Quote.cpp Chapter15/Quote.h Chapter15/Bulk_Quote.cpp Chapter15/Bulk_Quote.h Chapter15/Limit_Quote.cpp Chapter15/Limit_Quote.h Chapter15/Disc_Quote.cpp Chapter15/Disc_Quote.h Chapter15/Bulk_QuoteE15_26.cpp Chapter15/Bulk_QuoteE15_26.h Chapter15/Bulk_QuoteE15_27.cpp Chapter15/Bulk_QuoteE15_27.h Chapter15/Section9/Basket.cpp Chapter15/Section9/Basket.h)

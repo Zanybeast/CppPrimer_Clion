@@ -16,6 +16,9 @@ CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.o
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.cpp
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.h
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Message.h
+CMakeFiles/ForExercises.dir/Chapter13/Foo.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Foo.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Foo.h
 CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.o
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeClass.cpp
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeClass.h
@@ -44,13 +47,60 @@ CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.o
 CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.cpp
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.h
+CMakeFiles/ForExercises.dir/Chapter14/BoundStrCheck.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/BoundStrCheck.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/BoundStrCheck.h
+CMakeFiles/ForExercises.dir/Chapter14/CompareStringLengthWithSize.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareStringLengthWithSize.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareStringLengthWithSize.h
+CMakeFiles/ForExercises.dir/Chapter14/CompareTwoStrLength.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareTwoStrLength.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareTwoStrLength.h
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_Quote.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_Quote.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_Quote.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Disc_Quote.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_26.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_QuoteE15_26.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_QuoteE15_26.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_27.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_QuoteE15_27.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_QuoteE15_27.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Disc_Quote.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Disc_Quote.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Disc_Quote.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Disc_Quote.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Limit_Quote.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_Quote.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Disc_Quote.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Limit_Quote.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Limit_Quote.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Quote.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Section9/Basket.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Section9/Basket.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Section9/Basket.h
 CMakeFiles/ForExercises.dir/Employee.cpp.o
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Employee.cpp
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Employee.h
+CMakeFiles/ForExercises.dir/Sales_data.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Sales_data.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Sales_data.h
+CMakeFiles/ForExercises.dir/StrBlob.cpp.o
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/StrBlob.cpp
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/StrBlob.h
 CMakeFiles/ForExercises.dir/main.cpp.o
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/QueryResult.h
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter12/TextQuery.h
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Folder.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Foo.h
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeClass.h
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/HasPtrLikeValue.h
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/Message.h
@@ -58,6 +108,15 @@ CMakeFiles/ForExercises.dir/main.cpp.o
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/StrVec.h
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/TextQuery13.h
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter13/ZString.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/BoundStrCheck.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareStringLengthWithSize.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter14/CompareTwoStrLength.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_Quote.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Bulk_QuoteE15_26.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Disc_Quote.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Limit_Quote.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Quote.h
+ /Users/carl/Desktop/01Project/Cpp/ForExercises/Chapter15/Section9/Basket.h
  /Users/carl/Desktop/01Project/Cpp/ForExercises/MyDate.h
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Person.h
  /Users/carl/Desktop/01Project/Cpp/ForExercises/Sales_data.h

@@ -21,6 +21,7 @@ public:
         value = hpr.value;
         return *this;
     }
+    HasPtrLikeValue &operator=(HasPtrLikeValue &&rhs) noexcept;
     ~HasPtrLikeValue() {delete name;}
     std::string getName() {return *name;}
     int getValue() {return value;}

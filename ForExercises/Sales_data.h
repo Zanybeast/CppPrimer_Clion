@@ -26,6 +26,9 @@ class Sales_data
     friend Sales_data add (const Sales_data& lhs, const Sales_data& rhs);
     friend ifstream &read(ifstream &is, Sales_data& item);
     friend ostream &print(ostream &os, const Sales_data& item);
+    friend istream &operator>>(istream &, Sales_data &);
+    friend ostream &operator<<(ostream &, const Sales_data &);
+    friend Sales_data operator+(const Sales_data &, const Sales_data &);
     //公有成员
 public:
     //构造函数
@@ -34,7 +37,13 @@ public:
     Sales_data() : Sales_data("", 0, 0){ cout << "默认构造函数" << endl;}
     Sales_data(const string s):Sales_data(s, 0, 0) { cout << "Sales_data(const string s)" << endl; }
     Sales_data(ifstream &is) : Sales_data() { cout << "Sales_data(ifstream &is)" << endl; read(is, *this); }
+
+    explicit operator string() const { return bookNo; }
+    explicit operator double() const { return avg_price(); }
 //    Sales_data() : units_sold(0), revenue(0.0) { }    //某道练习题
+    //Operand members
+    Sales_data& operator+=(const Sales_data& rhs);
+    Sales_data& operator=(const string &s);
     //成员函数
     string isbn() const {return bookNo;}
     Sales_data &combine(const Sales_data&);
@@ -48,37 +57,6 @@ private:
 
 };
 
-//外部定义成员函数
-inline
-double Sales_data::avg_price() const {
-    if (units_sold) {
-        return revenue / units_sold;
-    } else {
-        return 0;
-    }
-}
 
-Sales_data& Sales_data::combine(const Sales_data &rhs) {
-    units_sold += rhs.units_sold;
-    revenue += rhs.revenue;
-    return *this;
-}
-
-//与类有关的函数接口
-Sales_data add (const Sales_data& lhs, const Sales_data& rhs) {
-    Sales_data sum = lhs;
-    sum.combine(rhs);
-    return sum;
-};
-ostream &print(ostream &os, const Sales_data& item) {
-    os << item.bookNo << " " << item.units_sold << " " << item.revenue << " " << item.avg_price();
-    return os;
-};
-ifstream &read(ifstream &is, Sales_data& item) {
-    double price = 0;
-    is >> item.bookNo >> item.units_sold >> price;
-    item.revenue = price * item.units_sold;
-    return is;
-};
 
 #endif //FOREXERCISES_SALES_DATA_H

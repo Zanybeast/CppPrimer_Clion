@@ -59,10 +59,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/carl/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.6397.106/CLion.app/Contents/bin/cmake/mac/bin/cmake"
+CMAKE_COMMAND = "/Users/carl/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.62/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/carl/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.6397.106/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
+RM = "/Users/carl/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.62/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/carl/Desktop/01Project/Cpp/ForExercises/cmake-build-de
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/carl/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.6397.106/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/carl/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.62/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/carl/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.6397.106/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+	"/Users/carl/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.62/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -250,6 +250,33 @@ Chapter13/Folder.s: Chapter13/Folder.cpp.s
 Chapter13/Folder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.s
 .PHONY : Chapter13/Folder.cpp.s
+
+Chapter13/Foo.o: Chapter13/Foo.cpp.o
+
+.PHONY : Chapter13/Foo.o
+
+# target to build an object file
+Chapter13/Foo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/Foo.cpp.o
+.PHONY : Chapter13/Foo.cpp.o
+
+Chapter13/Foo.i: Chapter13/Foo.cpp.i
+
+.PHONY : Chapter13/Foo.i
+
+# target to preprocess a source file
+Chapter13/Foo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/Foo.cpp.i
+.PHONY : Chapter13/Foo.cpp.i
+
+Chapter13/Foo.s: Chapter13/Foo.cpp.s
+
+.PHONY : Chapter13/Foo.s
+
+# target to generate assembly for a file
+Chapter13/Foo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/Foo.cpp.s
+.PHONY : Chapter13/Foo.cpp.s
 
 Chapter13/HasPtrLikeClass.o: Chapter13/HasPtrLikeClass.cpp.o
 
@@ -467,6 +494,276 @@ Chapter13/ZString.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.s
 .PHONY : Chapter13/ZString.cpp.s
 
+Chapter14/BoundStrCheck.o: Chapter14/BoundStrCheck.cpp.o
+
+.PHONY : Chapter14/BoundStrCheck.o
+
+# target to build an object file
+Chapter14/BoundStrCheck.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter14/BoundStrCheck.cpp.o
+.PHONY : Chapter14/BoundStrCheck.cpp.o
+
+Chapter14/BoundStrCheck.i: Chapter14/BoundStrCheck.cpp.i
+
+.PHONY : Chapter14/BoundStrCheck.i
+
+# target to preprocess a source file
+Chapter14/BoundStrCheck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter14/BoundStrCheck.cpp.i
+.PHONY : Chapter14/BoundStrCheck.cpp.i
+
+Chapter14/BoundStrCheck.s: Chapter14/BoundStrCheck.cpp.s
+
+.PHONY : Chapter14/BoundStrCheck.s
+
+# target to generate assembly for a file
+Chapter14/BoundStrCheck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter14/BoundStrCheck.cpp.s
+.PHONY : Chapter14/BoundStrCheck.cpp.s
+
+Chapter14/CompareStringLengthWithSize.o: Chapter14/CompareStringLengthWithSize.cpp.o
+
+.PHONY : Chapter14/CompareStringLengthWithSize.o
+
+# target to build an object file
+Chapter14/CompareStringLengthWithSize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter14/CompareStringLengthWithSize.cpp.o
+.PHONY : Chapter14/CompareStringLengthWithSize.cpp.o
+
+Chapter14/CompareStringLengthWithSize.i: Chapter14/CompareStringLengthWithSize.cpp.i
+
+.PHONY : Chapter14/CompareStringLengthWithSize.i
+
+# target to preprocess a source file
+Chapter14/CompareStringLengthWithSize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter14/CompareStringLengthWithSize.cpp.i
+.PHONY : Chapter14/CompareStringLengthWithSize.cpp.i
+
+Chapter14/CompareStringLengthWithSize.s: Chapter14/CompareStringLengthWithSize.cpp.s
+
+.PHONY : Chapter14/CompareStringLengthWithSize.s
+
+# target to generate assembly for a file
+Chapter14/CompareStringLengthWithSize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter14/CompareStringLengthWithSize.cpp.s
+.PHONY : Chapter14/CompareStringLengthWithSize.cpp.s
+
+Chapter14/CompareTwoStrLength.o: Chapter14/CompareTwoStrLength.cpp.o
+
+.PHONY : Chapter14/CompareTwoStrLength.o
+
+# target to build an object file
+Chapter14/CompareTwoStrLength.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter14/CompareTwoStrLength.cpp.o
+.PHONY : Chapter14/CompareTwoStrLength.cpp.o
+
+Chapter14/CompareTwoStrLength.i: Chapter14/CompareTwoStrLength.cpp.i
+
+.PHONY : Chapter14/CompareTwoStrLength.i
+
+# target to preprocess a source file
+Chapter14/CompareTwoStrLength.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter14/CompareTwoStrLength.cpp.i
+.PHONY : Chapter14/CompareTwoStrLength.cpp.i
+
+Chapter14/CompareTwoStrLength.s: Chapter14/CompareTwoStrLength.cpp.s
+
+.PHONY : Chapter14/CompareTwoStrLength.s
+
+# target to generate assembly for a file
+Chapter14/CompareTwoStrLength.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter14/CompareTwoStrLength.cpp.s
+.PHONY : Chapter14/CompareTwoStrLength.cpp.s
+
+Chapter15/Bulk_Quote.o: Chapter15/Bulk_Quote.cpp.o
+
+.PHONY : Chapter15/Bulk_Quote.o
+
+# target to build an object file
+Chapter15/Bulk_Quote.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Bulk_Quote.cpp.o
+.PHONY : Chapter15/Bulk_Quote.cpp.o
+
+Chapter15/Bulk_Quote.i: Chapter15/Bulk_Quote.cpp.i
+
+.PHONY : Chapter15/Bulk_Quote.i
+
+# target to preprocess a source file
+Chapter15/Bulk_Quote.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Bulk_Quote.cpp.i
+.PHONY : Chapter15/Bulk_Quote.cpp.i
+
+Chapter15/Bulk_Quote.s: Chapter15/Bulk_Quote.cpp.s
+
+.PHONY : Chapter15/Bulk_Quote.s
+
+# target to generate assembly for a file
+Chapter15/Bulk_Quote.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Bulk_Quote.cpp.s
+.PHONY : Chapter15/Bulk_Quote.cpp.s
+
+Chapter15/Bulk_QuoteE15_26.o: Chapter15/Bulk_QuoteE15_26.cpp.o
+
+.PHONY : Chapter15/Bulk_QuoteE15_26.o
+
+# target to build an object file
+Chapter15/Bulk_QuoteE15_26.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_26.cpp.o
+.PHONY : Chapter15/Bulk_QuoteE15_26.cpp.o
+
+Chapter15/Bulk_QuoteE15_26.i: Chapter15/Bulk_QuoteE15_26.cpp.i
+
+.PHONY : Chapter15/Bulk_QuoteE15_26.i
+
+# target to preprocess a source file
+Chapter15/Bulk_QuoteE15_26.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_26.cpp.i
+.PHONY : Chapter15/Bulk_QuoteE15_26.cpp.i
+
+Chapter15/Bulk_QuoteE15_26.s: Chapter15/Bulk_QuoteE15_26.cpp.s
+
+.PHONY : Chapter15/Bulk_QuoteE15_26.s
+
+# target to generate assembly for a file
+Chapter15/Bulk_QuoteE15_26.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_26.cpp.s
+.PHONY : Chapter15/Bulk_QuoteE15_26.cpp.s
+
+Chapter15/Bulk_QuoteE15_27.o: Chapter15/Bulk_QuoteE15_27.cpp.o
+
+.PHONY : Chapter15/Bulk_QuoteE15_27.o
+
+# target to build an object file
+Chapter15/Bulk_QuoteE15_27.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_27.cpp.o
+.PHONY : Chapter15/Bulk_QuoteE15_27.cpp.o
+
+Chapter15/Bulk_QuoteE15_27.i: Chapter15/Bulk_QuoteE15_27.cpp.i
+
+.PHONY : Chapter15/Bulk_QuoteE15_27.i
+
+# target to preprocess a source file
+Chapter15/Bulk_QuoteE15_27.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_27.cpp.i
+.PHONY : Chapter15/Bulk_QuoteE15_27.cpp.i
+
+Chapter15/Bulk_QuoteE15_27.s: Chapter15/Bulk_QuoteE15_27.cpp.s
+
+.PHONY : Chapter15/Bulk_QuoteE15_27.s
+
+# target to generate assembly for a file
+Chapter15/Bulk_QuoteE15_27.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_27.cpp.s
+.PHONY : Chapter15/Bulk_QuoteE15_27.cpp.s
+
+Chapter15/Disc_Quote.o: Chapter15/Disc_Quote.cpp.o
+
+.PHONY : Chapter15/Disc_Quote.o
+
+# target to build an object file
+Chapter15/Disc_Quote.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Disc_Quote.cpp.o
+.PHONY : Chapter15/Disc_Quote.cpp.o
+
+Chapter15/Disc_Quote.i: Chapter15/Disc_Quote.cpp.i
+
+.PHONY : Chapter15/Disc_Quote.i
+
+# target to preprocess a source file
+Chapter15/Disc_Quote.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Disc_Quote.cpp.i
+.PHONY : Chapter15/Disc_Quote.cpp.i
+
+Chapter15/Disc_Quote.s: Chapter15/Disc_Quote.cpp.s
+
+.PHONY : Chapter15/Disc_Quote.s
+
+# target to generate assembly for a file
+Chapter15/Disc_Quote.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Disc_Quote.cpp.s
+.PHONY : Chapter15/Disc_Quote.cpp.s
+
+Chapter15/Limit_Quote.o: Chapter15/Limit_Quote.cpp.o
+
+.PHONY : Chapter15/Limit_Quote.o
+
+# target to build an object file
+Chapter15/Limit_Quote.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Limit_Quote.cpp.o
+.PHONY : Chapter15/Limit_Quote.cpp.o
+
+Chapter15/Limit_Quote.i: Chapter15/Limit_Quote.cpp.i
+
+.PHONY : Chapter15/Limit_Quote.i
+
+# target to preprocess a source file
+Chapter15/Limit_Quote.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Limit_Quote.cpp.i
+.PHONY : Chapter15/Limit_Quote.cpp.i
+
+Chapter15/Limit_Quote.s: Chapter15/Limit_Quote.cpp.s
+
+.PHONY : Chapter15/Limit_Quote.s
+
+# target to generate assembly for a file
+Chapter15/Limit_Quote.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Limit_Quote.cpp.s
+.PHONY : Chapter15/Limit_Quote.cpp.s
+
+Chapter15/Quote.o: Chapter15/Quote.cpp.o
+
+.PHONY : Chapter15/Quote.o
+
+# target to build an object file
+Chapter15/Quote.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Quote.cpp.o
+.PHONY : Chapter15/Quote.cpp.o
+
+Chapter15/Quote.i: Chapter15/Quote.cpp.i
+
+.PHONY : Chapter15/Quote.i
+
+# target to preprocess a source file
+Chapter15/Quote.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Quote.cpp.i
+.PHONY : Chapter15/Quote.cpp.i
+
+Chapter15/Quote.s: Chapter15/Quote.cpp.s
+
+.PHONY : Chapter15/Quote.s
+
+# target to generate assembly for a file
+Chapter15/Quote.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Quote.cpp.s
+.PHONY : Chapter15/Quote.cpp.s
+
+Chapter15/Section9/Basket.o: Chapter15/Section9/Basket.cpp.o
+
+.PHONY : Chapter15/Section9/Basket.o
+
+# target to build an object file
+Chapter15/Section9/Basket.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Section9/Basket.cpp.o
+.PHONY : Chapter15/Section9/Basket.cpp.o
+
+Chapter15/Section9/Basket.i: Chapter15/Section9/Basket.cpp.i
+
+.PHONY : Chapter15/Section9/Basket.i
+
+# target to preprocess a source file
+Chapter15/Section9/Basket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Section9/Basket.cpp.i
+.PHONY : Chapter15/Section9/Basket.cpp.i
+
+Chapter15/Section9/Basket.s: Chapter15/Section9/Basket.cpp.s
+
+.PHONY : Chapter15/Section9/Basket.s
+
+# target to generate assembly for a file
+Chapter15/Section9/Basket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Chapter15/Section9/Basket.cpp.s
+.PHONY : Chapter15/Section9/Basket.cpp.s
+
 Employee.o: Employee.cpp.o
 
 .PHONY : Employee.o
@@ -493,6 +790,60 @@ Employee.s: Employee.cpp.s
 Employee.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Employee.cpp.s
 .PHONY : Employee.cpp.s
+
+Sales_data.o: Sales_data.cpp.o
+
+.PHONY : Sales_data.o
+
+# target to build an object file
+Sales_data.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Sales_data.cpp.o
+.PHONY : Sales_data.cpp.o
+
+Sales_data.i: Sales_data.cpp.i
+
+.PHONY : Sales_data.i
+
+# target to preprocess a source file
+Sales_data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Sales_data.cpp.i
+.PHONY : Sales_data.cpp.i
+
+Sales_data.s: Sales_data.cpp.s
+
+.PHONY : Sales_data.s
+
+# target to generate assembly for a file
+Sales_data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/Sales_data.cpp.s
+.PHONY : Sales_data.cpp.s
+
+StrBlob.o: StrBlob.cpp.o
+
+.PHONY : StrBlob.o
+
+# target to build an object file
+StrBlob.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/StrBlob.cpp.o
+.PHONY : StrBlob.cpp.o
+
+StrBlob.i: StrBlob.cpp.i
+
+.PHONY : StrBlob.i
+
+# target to preprocess a source file
+StrBlob.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/StrBlob.cpp.i
+.PHONY : StrBlob.cpp.i
+
+StrBlob.s: StrBlob.cpp.s
+
+.PHONY : StrBlob.s
+
+# target to generate assembly for a file
+StrBlob.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ForExercises.dir/build.make CMakeFiles/ForExercises.dir/StrBlob.cpp.s
+.PHONY : StrBlob.cpp.s
 
 main.o: main.cpp.o
 
@@ -542,6 +893,9 @@ help:
 	@echo "... Chapter13/Folder.o"
 	@echo "... Chapter13/Folder.i"
 	@echo "... Chapter13/Folder.s"
+	@echo "... Chapter13/Foo.o"
+	@echo "... Chapter13/Foo.i"
+	@echo "... Chapter13/Foo.s"
 	@echo "... Chapter13/HasPtrLikeClass.o"
 	@echo "... Chapter13/HasPtrLikeClass.i"
 	@echo "... Chapter13/HasPtrLikeClass.s"
@@ -566,9 +920,45 @@ help:
 	@echo "... Chapter13/ZString.o"
 	@echo "... Chapter13/ZString.i"
 	@echo "... Chapter13/ZString.s"
+	@echo "... Chapter14/BoundStrCheck.o"
+	@echo "... Chapter14/BoundStrCheck.i"
+	@echo "... Chapter14/BoundStrCheck.s"
+	@echo "... Chapter14/CompareStringLengthWithSize.o"
+	@echo "... Chapter14/CompareStringLengthWithSize.i"
+	@echo "... Chapter14/CompareStringLengthWithSize.s"
+	@echo "... Chapter14/CompareTwoStrLength.o"
+	@echo "... Chapter14/CompareTwoStrLength.i"
+	@echo "... Chapter14/CompareTwoStrLength.s"
+	@echo "... Chapter15/Bulk_Quote.o"
+	@echo "... Chapter15/Bulk_Quote.i"
+	@echo "... Chapter15/Bulk_Quote.s"
+	@echo "... Chapter15/Bulk_QuoteE15_26.o"
+	@echo "... Chapter15/Bulk_QuoteE15_26.i"
+	@echo "... Chapter15/Bulk_QuoteE15_26.s"
+	@echo "... Chapter15/Bulk_QuoteE15_27.o"
+	@echo "... Chapter15/Bulk_QuoteE15_27.i"
+	@echo "... Chapter15/Bulk_QuoteE15_27.s"
+	@echo "... Chapter15/Disc_Quote.o"
+	@echo "... Chapter15/Disc_Quote.i"
+	@echo "... Chapter15/Disc_Quote.s"
+	@echo "... Chapter15/Limit_Quote.o"
+	@echo "... Chapter15/Limit_Quote.i"
+	@echo "... Chapter15/Limit_Quote.s"
+	@echo "... Chapter15/Quote.o"
+	@echo "... Chapter15/Quote.i"
+	@echo "... Chapter15/Quote.s"
+	@echo "... Chapter15/Section9/Basket.o"
+	@echo "... Chapter15/Section9/Basket.i"
+	@echo "... Chapter15/Section9/Basket.s"
 	@echo "... Employee.o"
 	@echo "... Employee.i"
 	@echo "... Employee.s"
+	@echo "... Sales_data.o"
+	@echo "... Sales_data.i"
+	@echo "... Sales_data.s"
+	@echo "... StrBlob.o"
+	@echo "... StrBlob.i"
+	@echo "... StrBlob.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

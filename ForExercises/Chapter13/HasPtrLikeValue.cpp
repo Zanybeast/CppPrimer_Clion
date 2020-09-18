@@ -7,3 +7,14 @@
 bool operator<(const HasPtrLikeValue &lhs, const HasPtrLikeValue &rhs) {
     return *lhs.name < *rhs.name;
 }
+
+HasPtrLikeValue & HasPtrLikeValue::operator=(HasPtrLikeValue &&rhs) noexcept {
+    if (this != &rhs) {
+        delete name;
+        name = rhs.name;
+        value = rhs.value;
+        rhs.name = nullptr;
+
+    }
+    return *this;
+}

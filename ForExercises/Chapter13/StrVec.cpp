@@ -122,3 +122,51 @@ void StrVec::resize(size_t count, const std::string &s) {
     }
 }
 
+
+bool operator==(const StrVec& lhs, const StrVec& rhs)
+{
+    return (lhs.size() == rhs.size() &&
+            std::equal(lhs.begin(), lhs.end(), rhs.begin()));
+}
+
+bool operator!=(const StrVec& lhs, const StrVec& rhs)
+{
+    return !(lhs == rhs);
+}
+
+bool operator<(const StrVec& lhs, const StrVec& rhs)
+{
+    return std::lexicographical_compare(lhs.begin(), lhs.end(), rhs.begin(),
+                                        rhs.end());
+}
+
+bool operator>(const StrVec& lhs, const StrVec& rhs)
+{
+    return rhs < lhs;
+}
+
+bool operator<=(const StrVec& lhs, const StrVec& rhs)
+{
+    return !(rhs < lhs);
+}
+
+bool operator>=(const StrVec& lhs, const StrVec& rhs)
+{
+    return !(lhs < rhs);
+}
+
+StrVec & StrVec::operator=(std::initializer_list<std::string> il) {
+    auto data = alloc_n_copy(il.begin(), il.end());
+    free();
+    elements = data.first;
+    first_free = cap = data.second;
+    return *this;
+}
+
+std::string & StrVec::operator[](size_t n) {
+    return elements[n];
+}
+
+const std::string & StrVec::operator[](size_t n) const {
+    return elements[n];
+}

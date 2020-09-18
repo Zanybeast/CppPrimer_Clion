@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="QueryText" targetName="QueryText" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd1a347e-a87e-4391-ae8a-351e447fa8d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter13/Foo.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter13/Foo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter14/BoundStrCheck.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter14/BoundStrCheck.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter14/CompareStringLengthWithSize.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter14/CompareStringLengthWithSize.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter14/CompareTwoStrLength.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter14/CompareTwoStrLength.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Bulk_Quote.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Bulk_Quote.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Bulk_QuoteE15_26.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Bulk_QuoteE15_26.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Bulk_QuoteE15_27.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Bulk_QuoteE15_27.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Disc_Quote.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Disc_Quote.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Limit_Quote.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Limit_Quote.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Quote.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Quote.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Section9/Basket.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Chapter15/Section9/Basket.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/Sales_data.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForExercises/StrBlob.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aTextForCpp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/QueryText.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/Chapter13/HasPtrLikeValue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/Chapter13/HasPtrLikeValue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/Chapter13/HasPtrLikeValue.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/Chapter13/HasPtrLikeValue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/Chapter13/StrVec.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/Chapter13/StrVec.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/Chapter13/StrVec.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/Chapter13/StrVec.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/Chapter13/ZString.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/Chapter13/ZString.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/Chapter13/ZString.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/Chapter13/ZString.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/Sales_data.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/Sales_data.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/StrBlob.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/StrBlob.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter12/TextQuery.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeValue.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/QueryResult13.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/StrVec.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/TextQuery13.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/ForExercises.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/ForExercises" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/ForExercises" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/ForExercises.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/ForExercises.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForExercises/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ForExercises/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1hYRen6m2HXYPebeK3MKk1muZAm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="QueryText" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QueryText" TARGET_NAME="QueryText" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="QueryText" RUN_TARGET_NAME="QueryText">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd1a347e-a87e-4391-ae8a-351e447fa8d2" name="Default Changelist" comment="" />
+      <created>1600186136144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600186136144</updated>
+      <workItem from="1600186137453" duration="11370000" />
+      <workItem from="1600382574316" duration="364000" />
+      <workItem from="1600382985471" duration="59000" />
+      <workItem from="1600383053789" duration="3809000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="91" key="GridCell.Tab.0.bottom" timestamp="1600382976262">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="91" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1600382976262" />
+    <state width="1398" height="91" key="GridCell.Tab.0.center" timestamp="1600382976261">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="91" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1600382976261" />
+    <state width="1398" height="91" key="GridCell.Tab.0.left" timestamp="1600382976261">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="91" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1600382976261" />
+    <state width="1398" height="91" key="GridCell.Tab.0.right" timestamp="1600382976262">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="91" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1600382976262" />
+    <state width="1398" height="91" key="GridCell.Tab.1.bottom" timestamp="1600382976263">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="91" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1600382976263" />
+    <state width="1398" height="91" key="GridCell.Tab.1.center" timestamp="1600382976262">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="91" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1600382976262" />
+    <state width="1398" height="91" key="GridCell.Tab.1.left" timestamp="1600382976262">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="91" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1600382976262" />
+    <state width="1398" height="91" key="GridCell.Tab.1.right" timestamp="1600382976263">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="91" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1600382976263" />
+    <state x="295" y="84" key="SettingsEditor" timestamp="1600237878115">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state x="221" y="73" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1600198226188" />
+    <state x="295" y="84" key="SettingsEditor/0.23.1920.1003@0.23.1920.1003" timestamp="1600237878115" />
+  </component>
+</project>

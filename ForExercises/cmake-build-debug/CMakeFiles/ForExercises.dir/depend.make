@@ -16,6 +16,9 @@ CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.o: ../Chapter13/Folder.cpp
 CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.o: ../Chapter13/Folder.h
 CMakeFiles/ForExercises.dir/Chapter13/Folder.cpp.o: ../Chapter13/Message.h
 
+CMakeFiles/ForExercises.dir/Chapter13/Foo.cpp.o: ../Chapter13/Foo.cpp
+CMakeFiles/ForExercises.dir/Chapter13/Foo.cpp.o: ../Chapter13/Foo.h
+
 CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.o: ../Chapter13/HasPtrLikeClass.cpp
 CMakeFiles/ForExercises.dir/Chapter13/HasPtrLikeClass.cpp.o: ../Chapter13/HasPtrLikeClass.h
 
@@ -44,12 +47,59 @@ CMakeFiles/ForExercises.dir/Chapter13/TreeNode.cpp.o: ../Chapter13/TreeNode.h
 CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o: ../Chapter13/ZString.cpp
 CMakeFiles/ForExercises.dir/Chapter13/ZString.cpp.o: ../Chapter13/ZString.h
 
+CMakeFiles/ForExercises.dir/Chapter14/BoundStrCheck.cpp.o: ../Chapter14/BoundStrCheck.cpp
+CMakeFiles/ForExercises.dir/Chapter14/BoundStrCheck.cpp.o: ../Chapter14/BoundStrCheck.h
+
+CMakeFiles/ForExercises.dir/Chapter14/CompareStringLengthWithSize.cpp.o: ../Chapter14/CompareStringLengthWithSize.cpp
+CMakeFiles/ForExercises.dir/Chapter14/CompareStringLengthWithSize.cpp.o: ../Chapter14/CompareStringLengthWithSize.h
+
+CMakeFiles/ForExercises.dir/Chapter14/CompareTwoStrLength.cpp.o: ../Chapter14/CompareTwoStrLength.cpp
+CMakeFiles/ForExercises.dir/Chapter14/CompareTwoStrLength.cpp.o: ../Chapter14/CompareTwoStrLength.h
+
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_Quote.cpp.o: ../Chapter15/Bulk_Quote.cpp
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_Quote.cpp.o: ../Chapter15/Bulk_Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_Quote.cpp.o: ../Chapter15/Disc_Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_Quote.cpp.o: ../Chapter15/Quote.h
+
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_26.cpp.o: ../Chapter15/Bulk_QuoteE15_26.cpp
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_26.cpp.o: ../Chapter15/Bulk_QuoteE15_26.h
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_26.cpp.o: ../Chapter15/Quote.h
+
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_27.cpp.o: ../Chapter15/Bulk_QuoteE15_27.cpp
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_27.cpp.o: ../Chapter15/Bulk_QuoteE15_27.h
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_27.cpp.o: ../Chapter15/Disc_Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Bulk_QuoteE15_27.cpp.o: ../Chapter15/Quote.h
+
+CMakeFiles/ForExercises.dir/Chapter15/Disc_Quote.cpp.o: ../Chapter15/Disc_Quote.cpp
+CMakeFiles/ForExercises.dir/Chapter15/Disc_Quote.cpp.o: ../Chapter15/Disc_Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Disc_Quote.cpp.o: ../Chapter15/Quote.h
+
+CMakeFiles/ForExercises.dir/Chapter15/Limit_Quote.cpp.o: ../Chapter15/Bulk_Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Limit_Quote.cpp.o: ../Chapter15/Disc_Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Limit_Quote.cpp.o: ../Chapter15/Limit_Quote.cpp
+CMakeFiles/ForExercises.dir/Chapter15/Limit_Quote.cpp.o: ../Chapter15/Limit_Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Limit_Quote.cpp.o: ../Chapter15/Quote.h
+
+CMakeFiles/ForExercises.dir/Chapter15/Quote.cpp.o: ../Chapter15/Quote.cpp
+CMakeFiles/ForExercises.dir/Chapter15/Quote.cpp.o: ../Chapter15/Quote.h
+
+CMakeFiles/ForExercises.dir/Chapter15/Section9/Basket.cpp.o: ../Chapter15/Quote.h
+CMakeFiles/ForExercises.dir/Chapter15/Section9/Basket.cpp.o: ../Chapter15/Section9/Basket.cpp
+CMakeFiles/ForExercises.dir/Chapter15/Section9/Basket.cpp.o: ../Chapter15/Section9/Basket.h
+
 CMakeFiles/ForExercises.dir/Employee.cpp.o: ../Employee.cpp
 CMakeFiles/ForExercises.dir/Employee.cpp.o: ../Employee.h
+
+CMakeFiles/ForExercises.dir/Sales_data.cpp.o: ../Sales_data.cpp
+CMakeFiles/ForExercises.dir/Sales_data.cpp.o: ../Sales_data.h
+
+CMakeFiles/ForExercises.dir/StrBlob.cpp.o: ../StrBlob.cpp
+CMakeFiles/ForExercises.dir/StrBlob.cpp.o: ../StrBlob.h
 
 CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter12/QueryResult.h
 CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter12/TextQuery.h
 CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter13/Folder.h
+CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter13/Foo.h
 CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter13/HasPtrLikeClass.h
 CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter13/HasPtrLikeValue.h
 CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter13/Message.h
@@ -57,6 +107,15 @@ CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter13/QueryResult13.h
 CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter13/StrVec.h
 CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter13/TextQuery13.h
 CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter13/ZString.h
+CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter14/BoundStrCheck.h
+CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter14/CompareStringLengthWithSize.h
+CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter14/CompareTwoStrLength.h
+CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter15/Bulk_Quote.h
+CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter15/Bulk_QuoteE15_26.h
+CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter15/Disc_Quote.h
+CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter15/Limit_Quote.h
+CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter15/Quote.h
+CMakeFiles/ForExercises.dir/main.cpp.o: ../Chapter15/Section9/Basket.h
 CMakeFiles/ForExercises.dir/main.cpp.o: ../MyDate.h
 CMakeFiles/ForExercises.dir/main.cpp.o: ../Person.h
 CMakeFiles/ForExercises.dir/main.cpp.o: ../Sales_data.h

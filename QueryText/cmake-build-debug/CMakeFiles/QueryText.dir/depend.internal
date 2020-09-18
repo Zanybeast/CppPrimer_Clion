@@ -10,6 +10,7 @@ CMakeFiles/QueryText.dir/AndQuery.cpp.o
  /Users/carl/Desktop/01Project/Cpp/QueryText/Query_base.h
  /Users/carl/Desktop/01Project/Cpp/QueryText/StrBlob.h
  /Users/carl/Desktop/01Project/Cpp/QueryText/TextQuery.h
+ /Users/carl/Desktop/01Project/Cpp/QueryText/WordQuery.h
 CMakeFiles/QueryText.dir/BinaryQuery.cpp.o
  /Users/carl/Desktop/01Project/Cpp/QueryText/BinaryQuery.cpp
  /Users/carl/Desktop/01Project/Cpp/QueryText/BinaryQuery.h
@@ -18,6 +19,7 @@ CMakeFiles/QueryText.dir/BinaryQuery.cpp.o
  /Users/carl/Desktop/01Project/Cpp/QueryText/Query_base.h
  /Users/carl/Desktop/01Project/Cpp/QueryText/StrBlob.h
  /Users/carl/Desktop/01Project/Cpp/QueryText/TextQuery.h
+ /Users/carl/Desktop/01Project/Cpp/QueryText/WordQuery.h
 CMakeFiles/QueryText.dir/NotQuery.cpp.o
  /Users/carl/Desktop/01Project/Cpp/QueryText/NotQuery.cpp
  /Users/carl/Desktop/01Project/Cpp/QueryText/NotQuery.h
@@ -26,6 +28,7 @@ CMakeFiles/QueryText.dir/NotQuery.cpp.o
  /Users/carl/Desktop/01Project/Cpp/QueryText/Query_base.h
  /Users/carl/Desktop/01Project/Cpp/QueryText/StrBlob.h
  /Users/carl/Desktop/01Project/Cpp/QueryText/TextQuery.h
+ /Users/carl/Desktop/01Project/Cpp/QueryText/WordQuery.h
 CMakeFiles/QueryText.dir/OrQuery.cpp.o
  /Users/carl/Desktop/01Project/Cpp/QueryText/BinaryQuery.h
  /Users/carl/Desktop/01Project/Cpp/QueryText/OrQuery.cpp
@@ -35,6 +38,7 @@ CMakeFiles/QueryText.dir/OrQuery.cpp.o
  /Users/carl/Desktop/01Project/Cpp/QueryText/Query_base.h
  /Users/carl/Desktop/01Project/Cpp/QueryText/StrBlob.h
  /Users/carl/Desktop/01Project/Cpp/QueryText/TextQuery.h
+ /Users/carl/Desktop/01Project/Cpp/QueryText/WordQuery.h
 CMakeFiles/QueryText.dir/Query.cpp.o
  /Users/carl/Desktop/01Project/Cpp/QueryText/Query.cpp
  /Users/carl/Desktop/01Project/Cpp/QueryText/Query.h
@@ -79,4 +83,5 @@ CMakeFiles/QueryText.dir/main.cpp.o
  /Users/carl/Desktop/01Project/Cpp/QueryText/Query_base.h
  /Users/carl/Desktop/01Project/Cpp/QueryText/StrBlob.h
  /Users/carl/Desktop/01Project/Cpp/QueryText/TextQuery.h
+ /Users/carl/Desktop/01Project/Cpp/QueryText/WordQuery.h
  /Users/carl/Desktop/01Project/Cpp/QueryText/main.cpp

@@ -8,8 +8,6 @@
 #include "TextQuery.h"
 #include "QueryResult.h"
 
-class Query;
-
 class Query_base {
     friend class Query;
 

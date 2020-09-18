@@ -6,7 +6,7 @@
 #define QUERYTEXT_WORDQUERY_H
 
 #include "Query_base.h"
-#include "QueryResult.h"
+
 
 class WordQuery : public Query_base {
     friend class Query;

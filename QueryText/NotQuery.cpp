@@ -3,6 +3,7 @@
 //
 
 #include "NotQuery.h"
+#include <memory>
 
 QueryResult NotQuery::eval(const TextQuery &text) const {
     auto result = query.eval(text);
@@ -19,7 +20,3 @@ QueryResult NotQuery::eval(const TextQuery &text) const {
     return QueryResult(rep(), ret_lines, result.get_file());
 }
 
-inline
-Query operator~(const Query &operand) {
-    return std::shared_ptr<Query_base>(new NotQuery(operand));
-}

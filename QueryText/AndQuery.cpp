@@ -3,6 +3,8 @@
 //
 
 #include "AndQuery.h"
+#include <memory>
+#include <algorithm>
 
 QueryResult AndQuery::eval(const TextQuery &t) const {
     auto left = lhs.eval(t), right = rhs.eval(t);
@@ -11,9 +13,4 @@ QueryResult AndQuery::eval(const TextQuery &t) const {
                           right.begin(), right.end(),
                           std::inserter(*ret_lines, ret_lines->begin()));
     return QueryResult(rep(), ret_lines, left.get_file());
-}
-
-inline
-Query operator&(const Query &lhs, const Query &rhs) {
-    return std::shared_ptr<Query_base>(new AndQuery(lhs, rhs));
 }

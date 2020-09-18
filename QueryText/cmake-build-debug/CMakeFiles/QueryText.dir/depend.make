@@ -9,6 +9,7 @@ CMakeFiles/QueryText.dir/AndQuery.cpp.o: ../QueryResult.h
 CMakeFiles/QueryText.dir/AndQuery.cpp.o: ../Query_base.h
 CMakeFiles/QueryText.dir/AndQuery.cpp.o: ../StrBlob.h
 CMakeFiles/QueryText.dir/AndQuery.cpp.o: ../TextQuery.h
+CMakeFiles/QueryText.dir/AndQuery.cpp.o: ../WordQuery.h
 
 CMakeFiles/QueryText.dir/BinaryQuery.cpp.o: ../BinaryQuery.cpp
 CMakeFiles/QueryText.dir/BinaryQuery.cpp.o: ../BinaryQuery.h
@@ -17,6 +18,7 @@ CMakeFiles/QueryText.dir/BinaryQuery.cpp.o: ../QueryResult.h
 CMakeFiles/QueryText.dir/BinaryQuery.cpp.o: ../Query_base.h
 CMakeFiles/QueryText.dir/BinaryQuery.cpp.o: ../StrBlob.h
 CMakeFiles/QueryText.dir/BinaryQuery.cpp.o: ../TextQuery.h
+CMakeFiles/QueryText.dir/BinaryQuery.cpp.o: ../WordQuery.h
 
 CMakeFiles/QueryText.dir/NotQuery.cpp.o: ../NotQuery.cpp
 CMakeFiles/QueryText.dir/NotQuery.cpp.o: ../NotQuery.h
@@ -25,6 +27,7 @@ CMakeFiles/QueryText.dir/NotQuery.cpp.o: ../QueryResult.h
 CMakeFiles/QueryText.dir/NotQuery.cpp.o: ../Query_base.h
 CMakeFiles/QueryText.dir/NotQuery.cpp.o: ../StrBlob.h
 CMakeFiles/QueryText.dir/NotQuery.cpp.o: ../TextQuery.h
+CMakeFiles/QueryText.dir/NotQuery.cpp.o: ../WordQuery.h
 
 CMakeFiles/QueryText.dir/OrQuery.cpp.o: ../BinaryQuery.h
 CMakeFiles/QueryText.dir/OrQuery.cpp.o: ../OrQuery.cpp
@@ -34,6 +37,7 @@ CMakeFiles/QueryText.dir/OrQuery.cpp.o: ../QueryResult.h
 CMakeFiles/QueryText.dir/OrQuery.cpp.o: ../Query_base.h
 CMakeFiles/QueryText.dir/OrQuery.cpp.o: ../StrBlob.h
 CMakeFiles/QueryText.dir/OrQuery.cpp.o: ../TextQuery.h
+CMakeFiles/QueryText.dir/OrQuery.cpp.o: ../WordQuery.h
 
 CMakeFiles/QueryText.dir/Query.cpp.o: ../Query.cpp
 CMakeFiles/QueryText.dir/Query.cpp.o: ../Query.h
@@ -78,5 +82,6 @@ CMakeFiles/QueryText.dir/main.cpp.o: ../QueryResult.h
 CMakeFiles/QueryText.dir/main.cpp.o: ../Query_base.h
 CMakeFiles/QueryText.dir/main.cpp.o: ../StrBlob.h
 CMakeFiles/QueryText.dir/main.cpp.o: ../TextQuery.h
+CMakeFiles/QueryText.dir/main.cpp.o: ../WordQuery.h
 CMakeFiles/QueryText.dir/main.cpp.o: ../main.cpp
 

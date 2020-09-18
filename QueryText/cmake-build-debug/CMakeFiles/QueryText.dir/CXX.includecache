@@ -9,6 +9,10 @@
 /Users/carl/Desktop/01Project/Cpp/QueryText/AndQuery.cpp
 AndQuery.h
 /Users/carl/Desktop/01Project/Cpp/QueryText/AndQuery.h
+memory
+-
+algorithm
+-
 
 /Users/carl/Desktop/01Project/Cpp/QueryText/AndQuery.h
 BinaryQuery.h
@@ -27,6 +31,8 @@ Query.h
 /Users/carl/Desktop/01Project/Cpp/QueryText/NotQuery.cpp
 NotQuery.h
 /Users/carl/Desktop/01Project/Cpp/QueryText/NotQuery.h
+memory
+-
 
 /Users/carl/Desktop/01Project/Cpp/QueryText/NotQuery.h
 Query_base.h
@@ -37,20 +43,20 @@ Query.h
 /Users/carl/Desktop/01Project/Cpp/QueryText/OrQuery.cpp
 OrQuery.h
 /Users/carl/Desktop/01Project/Cpp/QueryText/OrQuery.h
+memory
+-
 
 /Users/carl/Desktop/01Project/Cpp/QueryText/OrQuery.h
-Query.h
-/Users/carl/Desktop/01Project/Cpp/QueryText/Query.h
 BinaryQuery.h
 /Users/carl/Desktop/01Project/Cpp/QueryText/BinaryQuery.h
 
 /Users/carl/Desktop/01Project/Cpp/QueryText/Query.cpp
 Query.h
 /Users/carl/Desktop/01Project/Cpp/QueryText/Query.h
-WordQuery.h
-/Users/carl/Desktop/01Project/Cpp/QueryText/WordQuery.h
 
 /Users/carl/Desktop/01Project/Cpp/QueryText/Query.h
+iostream
+-
 string
 -
 memory
@@ -61,6 +67,8 @@ QueryResult.h
 /Users/carl/Desktop/01Project/Cpp/QueryText/QueryResult.h
 TextQuery.h
 /Users/carl/Desktop/01Project/Cpp/QueryText/TextQuery.h
+WordQuery.h
+/Users/carl/Desktop/01Project/Cpp/QueryText/WordQuery.h
 
 /Users/carl/Desktop/01Project/Cpp/QueryText/QueryResult.h
 iostream
@@ -111,8 +119,6 @@ fstream
 /Users/carl/Desktop/01Project/Cpp/QueryText/WordQuery.h
 Query_base.h
 /Users/carl/Desktop/01Project/Cpp/QueryText/Query_base.h
-QueryResult.h
-/Users/carl/Desktop/01Project/Cpp/QueryText/QueryResult.h
 
 /Users/carl/Desktop/01Project/Cpp/QueryText/main.cpp
 iostream

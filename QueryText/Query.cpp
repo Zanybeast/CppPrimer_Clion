@@ -3,13 +3,13 @@
 //
 
 #include "Query.h"
-#include "WordQuery.h"
-
-inline
+//there's a "inline" here so the program can not run, after deleted, run successful.
+//"inline" function could only be seen on the file, so there should not be an "inline" here or it would cover
+//the original function
 Query::Query(const std::string &s) : q(new WordQuery(s)) {
-    std::cout << "Query::Query(const std::string& s) where s="+s+"\n";
+
 }
 
-std::ostream & operator<<(std::ostream &os, const Query &query) {
+inline std::ostream & operator<<(std::ostream &os, const Query &query) {
     return os << query.rep();
 }

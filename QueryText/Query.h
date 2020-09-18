@@ -5,11 +5,13 @@
 #ifndef QUERYTEXT_QUERY_H
 #define QUERYTEXT_QUERY_H
 
+#include <iostream>
 #include <string>
 #include <memory>
 #include "Query_base.h"
 #include "QueryResult.h"
 #include "TextQuery.h"
+#include "WordQuery.h"
 
 class Query {
     friend Query operator~(const Query &);

@@ -20,5 +20,9 @@ class NotQuery : public Query_base {
 
 };
 
+inline
+Query operator~(const Query &operand) {
+    return std::shared_ptr<Query_base>(new NotQuery(operand));
+}
 
 #endif //QUERYTEXT_NOTQUERY_H

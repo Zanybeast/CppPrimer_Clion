@@ -16,7 +16,7 @@ TextQuery::TextQuery(std::ifstream &input) : lines(new vecType) {
         while (stream >> eachWordInLine) {
             auto &lineNumsSet = wordsMap[eachWordInLine];
             if (!lineNumsSet) {
-                lineNumsSet.reset(new std::set<unsigned>);
+                lineNumsSet.reset(new std::set<unsigned>, DebugDelete());
             }
             lineNumsSet->insert(lineNum);
         }

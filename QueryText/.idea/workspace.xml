@@ -30,35 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd1a347e-a87e-4391-ae8a-351e447fa8d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/QueryText" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AndQuery.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/AndQuery.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AndQuery.h" beforeDir="false" afterPath="$PROJECT_DIR$/AndQuery.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NotQuery.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/NotQuery.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NotQuery.h" beforeDir="false" afterPath="$PROJECT_DIR$/NotQuery.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrQuery.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/OrQuery.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrQuery.h" beforeDir="false" afterPath="$PROJECT_DIR$/OrQuery.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Query.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Query.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Query.h" beforeDir="false" afterPath="$PROJECT_DIR$/Query.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Query_base.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Query_base.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Query_base.h" beforeDir="false" afterPath="$PROJECT_DIR$/Query_base.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordQuery.h" beforeDir="false" afterPath="$PROJECT_DIR$/WordQuery.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/AndQuery.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/AndQuery.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/NotQuery.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/NotQuery.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/OrQuery.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/OrQuery.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/Query.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/Query.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QueryText.dir/main.cpp.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +64,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RunManager">
     <configuration name="QueryText" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QueryText" TARGET_NAME="QueryText" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="QueryText" RUN_TARGET_NAME="QueryText">
@@ -137,58 +109,59 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="162" key="GridCell.Tab.0.bottom" timestamp="1600410678596">
+    <state width="1880" height="162" key="GridCell.Tab.0.bottom" timestamp="1600423042240">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state width="1398" height="91" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1600382976262" />
-    <state width="1878" height="162" key="GridCell.Tab.0.bottom/0.23.1920.1003@0.23.1920.1003" timestamp="1600389490157" />
+    <state width="1880" height="162" key="GridCell.Tab.0.bottom/0.23.1920.1003@0.23.1920.1003" timestamp="1600423042240" />
     <state width="1878" height="162" key="GridCell.Tab.0.bottom/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1600410678596" />
-    <state width="1878" height="162" key="GridCell.Tab.0.center" timestamp="1600410678595">
+    <state width="1880" height="162" key="GridCell.Tab.0.center" timestamp="1600423042239">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state width="1398" height="91" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1600382976261" />
-    <state width="1878" height="162" key="GridCell.Tab.0.center/0.23.1920.1003@0.23.1920.1003" timestamp="1600389490157" />
+    <state width="1880" height="162" key="GridCell.Tab.0.center/0.23.1920.1003@0.23.1920.1003" timestamp="1600423042239" />
     <state width="1878" height="162" key="GridCell.Tab.0.center/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1600410678595" />
-    <state width="1878" height="162" key="GridCell.Tab.0.left" timestamp="1600410678595">
+    <state width="1880" height="162" key="GridCell.Tab.0.left" timestamp="1600423042239">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state width="1398" height="91" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1600382976261" />
-    <state width="1878" height="162" key="GridCell.Tab.0.left/0.23.1920.1003@0.23.1920.1003" timestamp="1600389490156" />
+    <state width="1880" height="162" key="GridCell.Tab.0.left/0.23.1920.1003@0.23.1920.1003" timestamp="1600423042239" />
     <state width="1878" height="162" key="GridCell.Tab.0.left/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1600410678595" />
-    <state width="1878" height="162" key="GridCell.Tab.0.right" timestamp="1600410678596">
+    <state width="1880" height="162" key="GridCell.Tab.0.right" timestamp="1600423042239">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state width="1398" height="91" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1600382976262" />
-    <state width="1878" height="162" key="GridCell.Tab.0.right/0.23.1920.1003@0.23.1920.1003" timestamp="1600389490157" />
+    <state width="1880" height="162" key="GridCell.Tab.0.right/0.23.1920.1003@0.23.1920.1003" timestamp="1600423042239" />
     <state width="1878" height="162" key="GridCell.Tab.0.right/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1600410678596" />
-    <state width="1878" height="162" key="GridCell.Tab.1.bottom" timestamp="1600410678538">
+    <state width="1880" height="162" key="GridCell.Tab.1.bottom" timestamp="1600423042240">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state width="1398" height="91" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1600382976263" />
-    <state width="1878" height="162" key="GridCell.Tab.1.bottom/0.23.1920.1003@0.23.1920.1003" timestamp="1600389490159" />
+    <state width="1880" height="162" key="GridCell.Tab.1.bottom/0.23.1920.1003@0.23.1920.1003" timestamp="1600423042240" />
     <state width="1878" height="162" key="GridCell.Tab.1.bottom/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1600410678538" />
-    <state width="1878" height="162" key="GridCell.Tab.1.center" timestamp="1600410678538">
+    <state width="1880" height="162" key="GridCell.Tab.1.center" timestamp="1600423042240">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state width="1398" height="91" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1600382976262" />
-    <state width="1878" height="162" key="GridCell.Tab.1.center/0.23.1920.1003@0.23.1920.1003" timestamp="1600389490158" />
+    <state width="1880" height="162" key="GridCell.Tab.1.center/0.23.1920.1003@0.23.1920.1003" timestamp="1600423042240" />
     <state width="1878" height="162" key="GridCell.Tab.1.center/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1600410678538" />
-    <state width="1878" height="162" key="GridCell.Tab.1.left" timestamp="1600410678537">
+    <state width="1880" height="162" key="GridCell.Tab.1.left" timestamp="1600423042240">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state width="1398" height="91" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1600382976262" />
-    <state width="1878" height="162" key="GridCell.Tab.1.left/0.23.1920.1003@0.23.1920.1003" timestamp="1600389490158" />
+    <state width="1880" height="162" key="GridCell.Tab.1.left/0.23.1920.1003@0.23.1920.1003" timestamp="1600423042240" />
     <state width="1878" height="162" key="GridCell.Tab.1.left/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1600410678537" />
-    <state width="1878" height="162" key="GridCell.Tab.1.right" timestamp="1600410678538">
+    <state width="1880" height="162" key="GridCell.Tab.1.right" timestamp="1600423042240">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state width="1398" height="91" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1600382976263" />
-    <state width="1878" height="162" key="GridCell.Tab.1.right/0.23.1920.1003@0.23.1920.1003" timestamp="1600389490158" />
+    <state width="1880" height="162" key="GridCell.Tab.1.right/0.23.1920.1003@0.23.1920.1003" timestamp="1600423042240" />
     <state width="1878" height="162" key="GridCell.Tab.1.right/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1600410678538" />
-    <state x="295" y="84" key="SettingsEditor" timestamp="1600237878115">
+    <state x="588" y="276" key="SettingsEditor" timestamp="1600412051236">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state x="221" y="73" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1600198226188" />
     <state x="295" y="84" key="SettingsEditor/0.23.1920.1003@0.23.1920.1003" timestamp="1600237878115" />
+    <state x="588" y="276" key="SettingsEditor/314.1103.1440.877/0.23.1920.1003@0.23.1920.1003" timestamp="1600412051236" />
   </component>
 </project>

@@ -124,12 +124,12 @@ StrBlob& StrBlob::operator=(const StrBlob& lhs)
 
 StrBlob& StrBlob::operator=(StrBlob&& rhs) NOEXCEPT
 {
-if (this != &rhs) {
-data = std::move(rhs.data);
-rhs.data = nullptr;
-}
+    if (this != &rhs) {
+    data = std::move(rhs.data);
+    rhs.data = nullptr;
+    }
 
-return *this;
+    return *this;
 }
 
 //==================================================================

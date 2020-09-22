@@ -2294,10 +2294,10 @@ void chapter11() {
 }
 void chapter12() {
     //E12.30
-    /*ifstream input(ChapterOfNovel);
+    ifstream input(ChapterOfNovel);
     if (input) {
         runQueries(input);
-    }*/
+    }
 
 
     //E12.27
@@ -2813,11 +2813,13 @@ int main()
 {
     cout << "ForExercises--\n";
     testAndVerify();
-    chapter15();
+//    chapter15();
 
 //    chapter14();
 
 //    chapter13();
+
+    chapter12();
 
 //    chapter11();
 
